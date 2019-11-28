@@ -1,0 +1,1 @@
+je suis la valeur <?= $id ?> de la variable mise en parametre
