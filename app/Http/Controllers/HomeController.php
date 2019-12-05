@@ -2,18 +2,29 @@
 
 namespace App\Http\Controllers;
 
+use App\Product;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    public function index()
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
     {
-    	return view("home");
+        $this->middleware('auth');
     }
 
-#la methode show retourne grace a la methode view la page index.blade.php avec ses variables a l'aide de compact
-    public function show($id)
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function index()
     {
-    	return view("index", compact("id"));
+        $products = Product::all();
+        return view('products.index', compact('products', 'categories'));
     }
 }

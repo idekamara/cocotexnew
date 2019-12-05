@@ -40,10 +40,10 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">S'inscrire</a>
+            <a class="nav-link" href="register">S'inscrire</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Se connecter</a>
+            <a class="nav-link" href="login">Se connecter</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Contact</a>
@@ -75,7 +75,7 @@
       <!-- /.col-lg-9 ->
     < /div> -->
     <!-- /.row -->
-  </div>
+
   <!-- /.container -->
 
   <div class="container">
