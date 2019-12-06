@@ -2,7 +2,7 @@
 @section('corps_page')
 
 <div class="container">
-
+    <div><p><h2 >{{__('Entregistrement d\'un nouveau produit')}}</h2></p></div>
     <div><p><a href="{{route('products.index')}}">{{__('Voir les Derniers Produits Enregistrés')}}</a></p></div>
     <div class="container">
         @if($errors->any())
@@ -14,10 +14,10 @@
         <form action="{{route('products.store')}}" method="post">
             @csrf
             <div>
-                <input type="text" name="name" class="form-control" placeholder="le nom du produit">
+                <input type="text" name="name" class="form-control" placeholder="le nom du produit *">
             </div>
             <div>
-                <input type="text" name="price" class="form-control" placeholder="Le prix du produit">
+                <input type="text" name="price" class="form-control" placeholder="Le prix du produit *">
             </div>
             <div>
                 <textarea name="description" id="description" cols="30" rows="10" class="form-control" placeholder="La description"></textarea>

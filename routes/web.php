@@ -37,7 +37,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/products/index','ProductsController@index')->name('products.index');
-Route::get('/products/create','ProductsController@create');
+Route::get('/products/create','ProductsController@create')->name('products.create');
 Route::post('/products/store','ProductsController@store')->name('products.store');
 Route::resource('categories', 'CategoriesController');
 //Route::get('/c')
@@ -46,3 +46,4 @@ Route::get('/category/edit/{id}', 'CategoriesController@edit')->name('editer_cat
 Route::get('/product/edit/{id}', 'ProductsController@edit')->name('editer_produit');
 
 Route::patch("/product/edit/{id}", "ProductsController@update")->name('updater_produit');
+Route::patch("/category/edit/{id}", "ProductsController@update")->name('updater_category');

@@ -1,6 +1,9 @@
 @extends('layout')
 @section('corps_page')
-
+    <div class="container">
+        <div><p><h2 >{{__('Liste des Produits')}}</h2></p></div>
+        <div><p><a href="{{route('products.create')}}" >Ajouter un Nouveau Produit </a></p></div>
+    </div>
     <table class="table table-striped">
         <tr>
             <th>Id</th>          <th>Nom Produit</th>           <th>Prix Produit</th>           <th>Catégories</th>         <th>Description</th>        <th>Mettre à jour</th>

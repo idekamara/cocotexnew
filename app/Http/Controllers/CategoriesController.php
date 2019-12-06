@@ -25,7 +25,8 @@ class CategoriesController extends Controller
      */
     public function create()
     {
-        //
+        $categories = \App\Category::all();
+        return view('categories.create', compact('categories'));
     }
 
     /**
@@ -36,7 +37,16 @@ class CategoriesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->validate([
+            'name'=>'required|min:5',
+            'description' => 'required|max:1000000']);
+
+        $categories = new Category();
+
+        $categories->name = $request->input('name');
+        $categories->description = $request->input('description');
+        $categories->save();
+        return redirect('/categories/index');
     }
 
     /**
@@ -47,7 +57,8 @@ class CategoriesController extends Controller
      */
     public function show($id)
     {
-        //
+        $categories = \App\Category::pluck('name','id');
+        return view('categories.edit', compact('categories'));
     }
 
     /**
@@ -58,7 +69,9 @@ class CategoriesController extends Controller
      */
     public function edit($id)
     {
-        //
+        $categories = \App\Category::find($id);
+        $categories = \App\Category::pluck('name','id');
+        return view('categories.edit', compact('categories'));
     }
 
     /**
@@ -70,7 +83,15 @@ class CategoriesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $categories = \App\Category::find($id);
+        if($categories){
+            $categories->update([
+                'name' => $request->input('name'),
+                'description' => $request->input('description'),
+                ]);
+        }
+        $categories->save();
+        return redirect('/categories/index');
     }
 
     /**

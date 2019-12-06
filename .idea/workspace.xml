@@ -2,20 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d26cabbf-5da0-4981-95b5-22ffc0ea19db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/products/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/products/store.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade-.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade-.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/categories/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoriesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoriesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/fr/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/fr/validation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/categories/categories.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/categories/categories.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/categories/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/categories/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/products/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/products/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,6 +182,7 @@
       <workItem from="1575365598363" duration="13729000" />
       <workItem from="1575458178158" duration="15538000" />
       <workItem from="1575546724196" duration="13236000" />
+      <workItem from="1575627754023" duration="14728000" />
     </task>
     <servers />
   </component>
@@ -197,14 +194,18 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="311" y="58" width="800" height="677" key="#Inspections/67.27.1299.741@67.27.1299.741" timestamp="1575371269476" />
+    <state x="278" y="34" width="800" height="677" key="#Web_Browsers" timestamp="1575628426831">
+      <screen x="0" y="27" width="1366" height="694" />
+    </state>
+    <state x="278" y="34" width="800" height="677" key="#Web_Browsers/0.27.1366.694@0.27.1366.694" timestamp="1575628426831" />
     <state x="395" y="178" width="566" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1575547784154">
       <screen x="0" y="27" width="1366" height="694" />
     </state>
     <state x="395" y="178" width="566" height="390" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1366.694@0.27.1366.694" timestamp="1575547784154" />
-    <state x="416" y="131" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1575474857716">
+    <state x="416" y="131" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1575636886792">
       <screen x="0" y="27" width="1366" height="694" />
     </state>
-    <state x="416" y="131" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1366.694@0.27.1366.694" timestamp="1575474857716" />
+    <state x="416" y="131" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1366.694@0.27.1366.694" timestamp="1575636886792" />
     <state x="309" y="27" width="751" height="694" key="#phpunit.xml" timestamp="1575391595024">
       <screen x="0" y="27" width="1366" height="694" />
     </state>
@@ -225,14 +226,15 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state width="1233" height="162" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1575305685220" />
-    <state x="321" y="212" key="com.intellij.ide.util.TipDialog" timestamp="1575546758703">
+    <state x="321" y="212" key="com.intellij.ide.util.TipDialog" timestamp="1575627763477">
       <screen x="0" y="27" width="1366" height="694" />
     </state>
-    <state x="321" y="212" key="com.intellij.ide.util.TipDialog/0.27.1366.694@0.27.1366.694" timestamp="1575546758703" />
+    <state x="321" y="212" key="com.intellij.ide.util.TipDialog/0.27.1366.694@0.27.1366.694" timestamp="1575627763477" />
     <state x="372" y="225" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1575365606158" />
-    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1575297865517">
-      <screen x="67" y="27" width="1299" height="741" />
+    <state x="328" y="85" width="707" height="635" key="search.everywhere.popup" timestamp="1575631939030">
+      <screen x="0" y="27" width="1366" height="694" />
     </state>
+    <state x="328" y="85" width="707" height="635" key="search.everywhere.popup/0.27.1366.694@0.27.1366.694" timestamp="1575631939030" />
     <state x="379" y="89" width="672" height="678" key="search.everywhere.popup/67.27.1299.741@67.27.1299.741" timestamp="1575297865517" />
   </component>
 </project>

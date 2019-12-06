@@ -1,5 +1,5 @@
 @extends('layout')
-@section('corp_page')
+@section('corps_page')
     <div class="container">
         <form method="post" action="{{route('categories.store')}}">
         <div class="form-group">

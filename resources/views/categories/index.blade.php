@@ -1,7 +1,10 @@
 @extends('layout')
-@section('corp_page')
+@section('corps_page')
 <div class="container">
-
+    <div class="container">
+        <div><p><h2 >{{__('Liste des Catégories de produits')}}</h2></p></div>
+        <div><p><a href="{{route('categories.create')}}" >Ajouter une Nouvelle Categorie </a></p></div>
+    </div>
     <table class="table table-striped">
         <tr>
             <th>Id</th>          <th>Nom Categorie</th>                <th>Description</th>        <th>Mettre à jour</th>
