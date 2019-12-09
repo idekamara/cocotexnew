@@ -49,7 +49,7 @@ class ProductsController extends Controller
     {
         $data = $request->validate([
             'name'=>'required|min:5',
-            'price' => 'required|max:7|numeric',
+            'price' => 'required|numeric',
             'description' => 'max:1000000']);
 
         $product = new Product();
@@ -112,7 +112,6 @@ class ProductsController extends Controller
         }
         $product->save();
         return redirect('/products/index');
-
     }
 
     /**

@@ -2,7 +2,7 @@
 @section('corps_page')
 
 <div class="container">
-    <div><p><h2 >{{__('Entregistrement d\'un nouveau produit')}}</h2></p></div>
+    <div><p><h2>{{__('Entregistrement d\'un nouveau produit')}}</h2></p></div>
     <div><p><a href="{{route('products.index')}}">{{__('Voir les Derniers Produits Enregistrés')}}</a></p></div>
     <div class="container">
         @if($errors->any())

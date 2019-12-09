@@ -1,6 +1,6 @@
 @extends('layout')
 @section('corps_page')
-<form action="{{route('editer_produit',['id'=>$product->id])}}" method="post">
+<form action="{{route('updater_produit',['id'=>$product->id])}}" method="post">
     @csrf
     @method('patch')
     <div> <input type="text" name="name" class="form-control" placeholder="le nom du produit" value="{{$product->name}}"></div>

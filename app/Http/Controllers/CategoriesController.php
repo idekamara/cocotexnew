@@ -46,7 +46,7 @@ class CategoriesController extends Controller
         $categories->name = $request->input('name');
         $categories->description = $request->input('description');
         $categories->save();
-        return redirect('/categories/index');
+        return redirect('/categories');
     }
 
     /**
@@ -69,8 +69,9 @@ class CategoriesController extends Controller
      */
     public function edit($id)
     {
+
         $categories = \App\Category::find($id);
-        $categories = \App\Category::pluck('name','id');
+        //$categories = \App\Category::pluck('name','id');
         return view('categories.edit', compact('categories'));
     }
 
@@ -85,13 +86,11 @@ class CategoriesController extends Controller
     {
         $categories = \App\Category::find($id);
         if($categories){
-            $categories->update([
-                'name' => $request->input('name'),
-                'description' => $request->input('description'),
-                ]);
+            $categories->name = $request->input('name');
+            $categories->description = $request->input('description');
+            $categories->save();
         }
-        $categories->save();
-        return redirect('/categories/index');
+        return redirect('/categories');
     }
 
     /**
