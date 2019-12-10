@@ -31,7 +31,7 @@ class ProductsController extends Controller
     public function create()
     {   //On va recuperer les categories dans le model Category avec la methode pluck()
         $categories = \App\Category::pluck('name','id');
-        $products = Product::all();
+        $products = \App\Product::all();
         return view('products.create', compact('categories','products'));
 
         //return view('products.create');
@@ -73,7 +73,8 @@ class ProductsController extends Controller
      */
     public function show($id)
     {
-        //
+        $products = \App\Product::pluck('id','name');
+        return view('products.show', compact('products'));
     }
 
     /**
