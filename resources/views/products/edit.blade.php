@@ -1,6 +1,7 @@
 @extends('layout')
 @section('corps_page')
-<form action="{{route('updater_produit',['id'=>$product->id])}}" method="post">
+<div><p><h2>{{__('Mise à jour du Produt : '.$product->name)}}</h2></p></div>
+<form action="{{route('updater_produit',['id'=>$product->id])}}" method="post" enctype="multipart/form-data">
     @csrf
     @method('patch')
     <div> <input type="text" name="name" class="form-control" placeholder="le nom du produit" value="{{$product->name}}"></div>
@@ -14,6 +15,12 @@
         @endforeach
     </select>
     </div>
+    <div class="row">
+   <div class="col-6 text-right"><img src="{{asset($product->images)}}" alt="{{$product->name}}" width="100"></div><div class="col-6"><h3>Chargez une autre image pour remplacer celle-ci</h3></div>
+</div>
+<div>
+   <input type="file" name="product_image" class="form-control">
+</div>
 
     <div> <button class="btn btn-primary">Enregistrer</button> </div>
 </form>

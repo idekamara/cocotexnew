@@ -43,6 +43,8 @@ Route::post('/products/store','ProductsController@store')->name('products.store'
 Route::post('/products/show','ProductsController@show')->name('products.show');
 Route::get('/product/edit/{id}', 'ProductsController@edit')->name('editer_produit');
 Route::patch('/product/edit/{id}', 'ProductsController@update')->name('updater_produit');
+Route::delete('/product/product/{id}', 'ProductsController@destroy')->name('supprimer_produit');
+Route::get('/product/product/{id}','ProductsController@show')->name('image_product');
 
 //routes pour les differentes operations sur les categories
 

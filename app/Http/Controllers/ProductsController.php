@@ -1,10 +1,14 @@
 <?php
 
 namespace App\Http\Controllers;
-
+//importe les classes
 use App\Product;
 
 use Illuminate\Http\Request;
+
+use Illuminate\Http\UploadedFile;
+use Illuminate\Support\Str;
+use App\Http\Controllers\Storage;
 
 class ProductsController extends Controller
 {
@@ -48,22 +52,50 @@ class ProductsController extends Controller
     public function store(Request $request)
     {
         $data = $request->validate([
-            'name'=>'required|min:5',
+            'name'=>'required|max:300|min:5',
             'price' => 'required|numeric',
-            'description' => 'max:1000000']);
+            'description' => 'max:1000000',
+            'product_image' => 'nullable | max: 2048']);
 
         $product = new Product();
 
+          //On verfie si une image est envoyée
+          if($request->has('product_image')){
+            //On enregistre l'image dans un dossier
+            $image = $request->file('product_image');
+            //Nous allons definir le nom de notre image en combinant le nom du produit et un timestamp
+            $image_name = Str::slug($request->input('name')).'_'.time();
+            //Nous enregistrerons nos fichiers dans public/uploads/images
+            $folder = '/uploads/images/';
+            //Nous allons enregistrer le chemin complet de l'image dans la BD
+            $product->images = $folder.$image_name.'.'.$image->getClientOriginalExtension();
+            //Maintenant nous pouvons enregistrer l'image dans le dossier en utilisant la methode uploadImage();
+            $this->uploadImage($image, $folder, 'public', $image_name);
+   }
         $product->name = $request->input('name');
         $product->price = $request->input('price');
         $product->description = $request->input('description');
         $product->category_id = $request->input('category_id');
-
         $product->save();
         return redirect('/products/index');
+        //return redirect(route('products.index'));
        //return redirect()->back();
 
     }
+
+    //cette méthode gére l’enregistrement des fichiers uploadé
+    public function uploadImage(UploadedFile $uploadedFile, 
+                                                 $folder = null,
+                                                 $disk = 'public',
+                                                 $filename = null)
+        {
+            $name = !is_null($filename) ? $filename : str_random('25');
+            $file = $uploadedFile->storeAs($folder, $name.'.'.$uploadedFile->getClientOriginalExtension(), $disk);
+
+        return $file;
+        }
+
+
 
     /**
      * Display the specified resource.
@@ -73,8 +105,9 @@ class ProductsController extends Controller
      */
     public function show($id)
     {
-        $products = \App\Product::pluck('id','name');
-        return view('products.show', compact('products'));
+        $product = \App\Product::find($id);
+        $products = \App\Product::pluck('id','images');
+        return view('products.show',compact('product','products'));
     }
 
     /**
@@ -100,20 +133,45 @@ class ProductsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
-    {
+        public function update(Request $request, $id)
+        {
+        /* $product = \App\Product::find($id);
+        if($product){
+        $product->update([
+        'name' => $request->input('name'),
+        'price' => $request->input('price'),
+        'description' => $request->input('description'),
+        'category_id' => $request->input('category_id'),
+        ]);
+        }*/
+
+        $data = $request->validate([
+        'name'   => 'required',
+        'price' => 'required | numeric',
+        'product_image' => 'nullable | image | mimes:jpeg,png,jpg,gif | max:2048']);
         $product = \App\Product::find($id);
         if($product){
-            $product->update([
-                'name' => $request->input('name'),
-                'price' => $request->input('price'),
-                'description' => $request->input('description'),
-                'category_id' => $request->input('category_id'),
-            ]);
+        if($request->has('product_image')){
+        //On enregistre l'image dans une variable
+        $image = $request->file('product_image');
+        if(file_exists(public_path().$product->images))//On verifie si le fichier existe
+           Storage::delete(asset($product->images));//On le supprime alors
+        //Nous enregistrerons nos fichiers dans /uploads/images dans public
+        $folder = '/uploads/images/';
+        $image_name = Str::slug($request->input('name')).'_'.time();
+        $product->images = $folder.$image_name.'.'.$image->getClientOriginalExtension();
+        //Maintenant nous pouvons enregistrer l'image dans le dossier en utilisant la méthode uploadImage();
+        $this->uploadImage($image, $folder, 'public', $image_name);
         }
+        $product->name  = $request->input('name');
+        $product->price = $request->input('price');
+        $product->description = $request->input('description');
+        $product->category_id = $request->input('category_id');
+
         $product->save();
         return redirect('/products/index');
     }
+}
 
     /**
      * Remove the specified resource from storage.
@@ -123,6 +181,12 @@ class ProductsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $product = Product::find($id);
+        if($product)
+        $product->delete();
+        //return redirect()->route('products.index');
+        return redirect('/products/index');
+    
+
     }
 }

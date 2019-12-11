@@ -11,15 +11,24 @@
         @foreach($products as $product)
             <tr>
                 <td> {{$product->id}} </td>
-                <td>{{$product->name}}</td>
+                <td><a href="/product/product/{{$product->images}}">{{$product->name}}</a> <img src="{{$product->images ? asset($product->images) : asset('uploads/images/default.png')}}" alt="{{$product->name}}" width="50"></td>
                 <td>{{$product->price}}</td>
                 <td> {{ $product->category->name ?? '' }}</td>
                 <td>{{$product->description}}</td>
                 <td>
                     <p>
-                        <a href="{{route('editer_produit',['id'=>$product->id])}}">Editer</a>
+                        <a href="{{route('editer_produit',['id'=>$product->id])}}"><input type="submit" class="btn btn-success" name="delete" value="Editer"></a>
                     </p>
+
+                    <form action="/product/product/{{$product->id}}" method="post">
+                         @csrf
+                        @method('delete')
+                        <input type="submit" class="btn btn-danger" name="delete" value="Supprimer">
+                    </form>
+
+
                 </td>
+
             </tr>
         @endforeach
     </table>

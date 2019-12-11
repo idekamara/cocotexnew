@@ -11,7 +11,7 @@
             @endforeach
         @endif
 
-        <form action="{{route('products.store')}}" method="post">
+        <form action="{{route('products.store')}}" method="post" enctype="multipart/form-data">
             @csrf
             <div>
                 <input type="text" name="name" class="form-control" placeholder="le nom du produit *">
@@ -31,6 +31,8 @@
                     @endforeach
                 </select>
             </div>
+            <form action="{{route('products.store')}}" method="post" enctype="multipart/form-data">
+                <div><input type="file" name="product_image" class="form-control"></div>
             <div>
                 <button class="btn btn-primary">Enregistrer</button>
             </div>
