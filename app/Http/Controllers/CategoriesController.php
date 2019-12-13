@@ -69,7 +69,7 @@ class CategoriesController extends Controller
      */
     public function edit($id)
     {
-
+        $this->authorize('admin');
         $categories = \App\Category::find($id);
         //$categories = \App\Category::pluck('name','id');
         return view('categories.edit', compact('categories'));
@@ -101,6 +101,11 @@ class CategoriesController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $this->authorize('admin');
+        $categories = \App\Category::find($id);
+        if($categories)
+        $categories->delete();
+        //return redirect()->route('products.index');
+        return redirect('/categories');
     }
 }

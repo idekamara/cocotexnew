@@ -10,11 +10,11 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-# appel static sur la methode anonyme qui retourne la methode view()
+/*# appel static sur la methode anonyme qui retourne la methode view()
 Route::get('/', function ()
 {
     return view('home');
-});
+});*/
 /*
 Route::get('/produits', function()
 {
@@ -35,21 +35,31 @@ Route::get('/categories/{id}', 'ProductsController@affiche');
 
 Auth::routes();
 //route page d'accueil
+Route::get('/', 'HomeController@index')->name('home');
 Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/home', 'HomeController@index')->name('home');
 //routes pour les differentes operations sur les produits
 Route::get('/products/index','ProductsController@index')->name('products.index');
-Route::get('/products/create','ProductsController@create')->name('products.create');
+Route::get('/products/pagnes','ProductsController@afficher')->name('products.pagnes');
+Route::get('/products/create','ProductsController@create')->name('products.create')->middleware('auth');
 Route::post('/products/store','ProductsController@store')->name('products.store');
 Route::post('/products/show','ProductsController@show')->name('products.show');
 Route::get('/product/edit/{id}', 'ProductsController@edit')->name('editer_produit');
 Route::patch('/product/edit/{id}', 'ProductsController@update')->name('updater_produit');
-Route::delete('/product/product/{id}', 'ProductsController@destroy')->name('supprimer_produit');
+Route::delete('/product/product/{id}', 'ProductsController@destroy')->name('supprimer_produit')->middleware('auth');;
 Route::get('/product/product/{id}','ProductsController@show')->name('image_product');
+
+//Route::get('/login','LoginController@showLoginForm')->name('login');
 
 //routes pour les differentes operations sur les categories
 
 Route::resource('categories', 'CategoriesController');
 Route::get('/category/edit/{id}', 'CategoriesController@edit')->name('editer_category');
 Route::patch("/category/edit/{id}", "CategoriesController@update")->name('updater_category');
+Route::delete('/category/category/{id}', 'CategoriesController@destroy')->name('supprimer_caregory');
 
 
+
+Auth::routes();
+
+//Route::get('/home', 'HomeController@index')->name('home');

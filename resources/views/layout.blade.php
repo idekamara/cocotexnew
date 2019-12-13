@@ -34,20 +34,47 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
+
           <li class="nav-item active">
-            <a class="nav-link" href="#">Accueil
+            <div class="top-right links">
+            <a class="nav-link" href="{{route('home')}}">Accueil
               <span class="sr-only">(current)</span>
-            </a>
+                 </a> 
+                 <li class="nav-item">
+                 <a class="nav-link" href="#" color='black'>A Propos</a>
+                  </li>
+                     @guest
+                          <li class="nav-item">
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('Connexion') }}</a>
+                            </li>
+                            @if (Route::has('register'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Inscription') }}</a>
+                                </li>
+                            @endif
+                        @else
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('home') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Déconnexion') }}
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                    </form>
+                                </div>
+                            </li>
+                        @endguest
+              <li class="nav-item">
+            <a class="nav-link" href="#">Nos Contacts</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="register">S'inscrire</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="login">Se connecter</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
+        </div>
         </ul>
       </div>
     </div>

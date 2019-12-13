@@ -6,18 +6,18 @@
         <div class="row">
 
             <div class="col-lg-3" >
-                <h4 class="my-4"><marquee behavior="alternate" direction="" scrollamount="" height="" width="" > L'Élégance du Textile</marquee></h4>
+                <h4 class="my-3"><marquee behavior="alternate" direction="" scrollamount="" height="" width="" > L'Élégance du Textile</marquee></h4>
 
                 <div id="menu">
                     <div class="list-group">
-                        <a href="#" class="list-group-item">Pagnes Africains</a>
+                        <a href="{{route('products.pagnes')}}" class="list-group-item">Pagnes Africains</a>
                         <a href="#" class="list-group-item">Costumes Africains</a>
                         <a href="#" class="list-group-item">Chemises Tissees</a>
                         <a href="#" class="list-group-item">Chemises Patchees</a>
                         <a href="#" class="list-group-item">Bombers Woodin</a>
                         <a href="#" class="list-group-item">Chaussures Tissees</a>
                         <a href="#" class="list-group-item">Chaussures Woodin</a>
-                        <a href="#" class="list-group-item">Produits Cosmetiques BIO</a>
+                        <a href="#" class="list-group-item">Bio Cosmetiques</a>
 
                     </div>
                 </div>

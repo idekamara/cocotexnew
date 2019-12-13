@@ -7,12 +7,20 @@ use App\Product;
 use Illuminate\Http\Request;
 
 use Illuminate\Http\UploadedFile;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
-use App\Http\Controllers\Storage;
+use Illuminate\Support\Facades\Storage;
+//use Illuminate\Support\Str;
 
 class ProductsController extends Controller
 {
-    /**
+
+    //ce construreur aura pour effet de fermer toutes les méthodes du contrôleur au utilisateurs non connectés.
+    public function __construct()
+    {
+      //$this->middleware('auth');
+    }
+        /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
@@ -27,13 +35,22 @@ class ProductsController extends Controller
         return view('products.index', compact('products'));
     }
 
+    public function afficher()
+    {
+      
+        $products = \App\Product::where('category_id',1)->orderBy('created_at', 'DESC')->get();
+
+        return view('products.pagnes', compact('products'));
+    }
+
     /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
      */
     public function create()
-    {   //On va recuperer les categories dans le model Category avec la methode pluck()
+    { //$this->authorize('admin');    
+     //On va recuperer les categories dans le model Category avec la methode pluck()
         $categories = \App\Category::pluck('name','id');
         $products = \App\Product::all();
         return view('products.create', compact('categories','products'));
@@ -70,7 +87,7 @@ class ProductsController extends Controller
             //Nous allons enregistrer le chemin complet de l'image dans la BD
             $product->images = $folder.$image_name.'.'.$image->getClientOriginalExtension();
             //Maintenant nous pouvons enregistrer l'image dans le dossier en utilisant la methode uploadImage();
-            $this->uploadImage($image, $folder, 'public', $image_name);
+            $save_img = $this->uploadImage($image, $folder, 'public', $image_name);
    }
         $product->name = $request->input('name');
         $product->price = $request->input('price');
@@ -118,6 +135,7 @@ class ProductsController extends Controller
      */
     public function edit($id)
     {
+        //$this->authorize('admin');
         //on recupere le produit avec la methode find()
         $product = \App\Product::find($id);
         $categories = \App\Category::pluck('name','id');
@@ -181,6 +199,7 @@ class ProductsController extends Controller
      */
     public function destroy($id)
     {
+        $this->authorize('admin');
         $product = Product::find($id);
         if($product)
         $product->delete();

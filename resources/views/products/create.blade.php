@@ -31,7 +31,6 @@
                     @endforeach
                 </select>
             </div>
-            <form action="{{route('products.store')}}" method="post" enctype="multipart/form-data">
                 <div><input type="file" name="product_image" class="form-control"></div>
             <div>
                 <button class="btn btn-primary">Enregistrer</button>

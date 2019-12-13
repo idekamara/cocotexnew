@@ -18,8 +18,14 @@
                 <td>{{$category->description}}</td>
                 <td>
                     <p>
-                        <a href="{{route('editer_category',['id'=>$category->id])}}">Editer</a>
+                        <a href="{{route('editer_category',['id'=>$category->id])}}"><input type="submit" class="btn btn-success" name="delete" value="Editer"></a>
                     </p>
+                    <form action="/category/category/{{$category->id}}" method="post">
+                         @csrf
+                        @method('delete')
+                        <input type="submit" class="btn btn-danger" name="delete" value="Supprimer">
+                    </form>
+
                 </td>
             </tr>
         @endforeach
