@@ -40,7 +40,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 //Route::get('/home', 'HomeController@index')->name('home');
 //routes pour les differentes operations sur les produits
 Route::get('/products/index','ProductsController@index')->name('products.index');
-Route::get('/products/pagnes','ProductsController@afficher')->name('products.pagnes');
+Route::get('/products/pagnes','ProductsController@afficherPagnes')->name('products.pagnes');
+Route::get('/products/costumes','ProductsController@afficherCostumes')->name('products.costumes');
+Route::get('/products/chemises','ProductsController@afficherChemises')->name('products.chemises');
 Route::get('/products/create','ProductsController@create')->name('products.create')->middleware('auth');
 Route::post('/products/store','ProductsController@store')->name('products.store');
 Route::post('/products/show','ProductsController@show')->name('products.show');

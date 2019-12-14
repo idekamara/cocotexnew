@@ -35,13 +35,25 @@ class ProductsController extends Controller
         return view('products.index', compact('products'));
     }
 
-    public function afficher()
-    {
-      
+    public function afficherPagnes()
+    {      
         $products = \App\Product::where('category_id',1)->orderBy('created_at', 'DESC')->get();
-
         return view('products.pagnes', compact('products'));
     }
+
+    public function afficherCostumes()
+    {
+       $products = \App\Product::where('category_id',2)->orderBy('created_at', 'DESC')->get();
+       return view('products.costumes', compact('products'));
+    }
+
+    public function afficherChemises()
+    {
+       $products = \App\Product::where('category_id',3)->orderBy('created_at', 'DESC')->get();
+       return view('products.chemises', compact('products'));
+    }
+
+
 
     /**
      * Show the form for creating a new resource.
@@ -72,12 +84,13 @@ class ProductsController extends Controller
             'name'=>'required|max:300|min:5',
             'price' => 'required|numeric',
             'description' => 'max:1000000',
-            'product_image' => 'nullable | max: 2048']);
+            'product_image' => 'nullable | max:4096']);
 
         $product = new Product();
 
           //On verfie si une image est envoyée
-          if($request->has('product_image')){
+          if($request->has('product_image'))
+          {
             //On enregistre l'image dans un dossier
             $image = $request->file('product_image');
             //Nous allons definir le nom de notre image en combinant le nom du produit et un timestamp
@@ -88,7 +101,7 @@ class ProductsController extends Controller
             $product->images = $folder.$image_name.'.'.$image->getClientOriginalExtension();
             //Maintenant nous pouvons enregistrer l'image dans le dossier en utilisant la methode uploadImage();
             $save_img = $this->uploadImage($image, $folder, 'public', $image_name);
-   }
+             }
         $product->name = $request->input('name');
         $product->price = $request->input('price');
         $product->description = $request->input('description');
@@ -97,7 +110,6 @@ class ProductsController extends Controller
         return redirect('/products/index');
         //return redirect(route('products.index'));
        //return redirect()->back();
-
     }
 
     //cette méthode gére l’enregistrement des fichiers uploadé

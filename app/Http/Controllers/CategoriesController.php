@@ -69,7 +69,7 @@ class CategoriesController extends Controller
      */
     public function edit($id)
     {
-        $this->authorize('admin');
+        //$this->authorize('admin');
         $categories = \App\Category::find($id);
         //$categories = \App\Category::pluck('name','id');
         return view('categories.edit', compact('categories'));

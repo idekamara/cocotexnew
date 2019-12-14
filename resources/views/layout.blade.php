@@ -41,7 +41,8 @@
               <span class="sr-only">(current)</span>
                  </a> 
                  <li class="nav-item">
-                 <a class="nav-link" href="#" color='black'>A Propos</a>
+                 <a class="nav-link" href="#" color=''>A Propos</a>
+                 <span class="sr-only">(current)</span>
                   </li>
                      @guest
                           <li class="nav-item">

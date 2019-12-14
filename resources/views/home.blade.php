@@ -11,7 +11,7 @@
                 <div id="menu">
                     <div class="list-group">
                         <a href="{{route('products.pagnes')}}" class="list-group-item">Pagnes Africains</a>
-                        <a href="#" class="list-group-item">Costumes Africains</a>
+                        <a href="{{route('products.costumes')}}" class="list-group-item">Costumes Africains</a>
                         <a href="#" class="list-group-item">Chemises Tissees</a>
                         <a href="#" class="list-group-item">Chemises Patchees</a>
                         <a href="#" class="list-group-item">Bombers Woodin</a>

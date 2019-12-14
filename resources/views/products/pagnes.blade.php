@@ -10,15 +10,19 @@
 
                 <div id="menu">
                     <div class="list-group">
-                        <a href="{{route('products.pagnes')}}" class="list-group-item"></a>
-                        <a href="#" class="list-group-item">Costumes Africains</a>
-                        <a href="#" class="list-group-item">Chemises Tissees</a>
-                        <a href="#" class="list-group-item">Chemises Patchees</a>
-                        <a href="#" class="list-group-item">Bombers Woodin</a>
-                        <a href="#" class="list-group-item">Chaussures Tissees</a>
-                        <a href="#" class="list-group-item">Chaussures Woodin</a>
-                        <a href="#" class="list-group-item">Bio Cosmetiques</a>
-
+                        <a href="{{route('products.pagnes')}}" class="list-group-item">Pagnes Africains</a>
+                        <span class="sr-only">(current)</span>
+                        <a href="{{route('products.costumes')}}" class="list-group-item">Costumes Africains</a>
+                        <span class="sr-only">(current)</span>
+                        <a href="{{route('products.chemises')}}" class="list-group-item">Chemises Africaines</a>
+                        <span class="sr-only">(current)</span>
+                        <a href="#" class="list-group-item">Bombers en Woodin</a>
+                        <span class="sr-only">(current)</span>
+                        <a href="#" class="list-group-item">Chaussures en Woodin</a>
+                        <span class="sr-only">(current)</span>
+                        <a href="#" class="list-group-item">HIJAB</a>
+                        <span class="sr-only">(current)</span>
+                        <a href="#" class="list-group-item">Bio Cosmetiques</a> 
                     </div>
                 </div>
 
@@ -39,28 +43,28 @@
                     </ol>
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
-                            <img class="d-block img-fluid" src="{{asset('shop/w0.jpg')}}" style="width:900px;height:350px" alt="Pagnes Africains">
+                            <img class="d-block img-fluid" src="{{asset('shop/w2t5.jpg')}}" style="width:900px;height:350px" alt="Pagnes Africains">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/w1.jpg')}}" style="width:900px;height:350px" alt="Costumes Africains">
+                            <img class="d-block img-fluid" src="{{asset('shop/w2t3.jpg')}}" style="width:900px;height:350px" alt="Costumes Africains">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/w2.jpg')}}" style="width:900px;height:350px" alt="Chemises Tissées">
+                            <img class="d-block img-fluid" src="{{asset('shop/wx1.jpg')}}" style="width:900px;height:350px" alt="Chemises Tissées">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/w3.jpg')}}" style="width:900px;height:350px" alt="Chemises Patchées">
+                            <img class="d-block img-fluid" src="{{asset('shop/wx3.jpg')}}" style="width:900px;height:350px" alt="Chemises Patchées">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/w4.jpg')}}" style="width:900px;height:350px" alt="Bombers Woodin">
+                            <img class="d-block img-fluid" src="{{asset('shop/cd2.jpg')}}" style="width:900px;height:350px" alt="Bombers Woodin">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/w5.jpg')}}" style="width:900px;height:350px" alt="Chaussures Tissées">
+                            <img class="d-block img-fluid" src="{{asset('shop/cd1.jpg')}}" style="width:900px;height:350px" alt="Chaussures Tissées">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/w6.jpg')}}" style="width:900px;height:350px" alt="Chaussures Woodin">
+                            <img class="d-block img-fluid" src="{{asset('shop/w3.jpg')}}" style="width:900px;height:350px" alt="Chaussures Woodin">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/w7.jpg')}}" style="width:900px;height:350px" alt="Chaussures Woodin">
+                            <img class="d-block img-fluid" src="{{asset('shop/w04.jpg')}}" style="width:900px;height:350px" alt="Chaussures Woodin">
                         </div>
 
                     </div>
@@ -93,6 +97,7 @@
                     </div>
                         @endforeach
 
+                    <!--    
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
                             <a href="#"><img class="card-img-top" src="{{asset('shop/w5.jpg')}}" style=" width:100%; height:145px" alt=""></a>
@@ -189,7 +194,7 @@
                         </div>
                     </div>
 
-                   
+                   -->
 
                 </div>
                 <!-- /.row -->
