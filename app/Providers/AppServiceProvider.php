@@ -2,8 +2,10 @@
 
 namespace App\Providers;
 
-use Illuminate\Support\ServiceProvider;
+use App\User;
 use Illuminate\Support\Facades\Gate;
+use Illuminate\Support\ServiceProvider;
+//use Illuminate\Support\Facades\Gate;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -23,6 +25,10 @@ class AppServiceProvider extends ServiceProvider
         Gate::define('moderator',function(User $user)
         {
             return $user->isModerator();
+        });
+        Gate::define('user',function(User $user)
+        {
+            return $user->isUser();
         });
     }
 

@@ -16,16 +16,16 @@
                         <span class="sr-only">(current)</span>
                         <a href="{{route('products.chemises')}}" class="list-group-item">Chemises Africaines</a>
                         <span class="sr-only">(current)</span>
-                       <a href="#" class="list-group-item">Bombers Woodin</a>
+                        <a href="{{route('products.bombers')}}" class="list-group-item">Bombers Africains</a>
                         <span class="sr-only">(current)</span>
-                        <a href="#" class="list-group-item">Bombers Woodin</a>
+                        <a href="#" class="list-group-item">Chaussures en Woodin</a>
                         <span class="sr-only">(current)</span>
-                        <a href="#" class="list-group-item">Chaussures Woodin</a>
+                        <a href="#" class="list-group-item">HIJAB</a>
                         <span class="sr-only">(current)</span>
-                        <a href="#" class="list-group-item">Bio Cosmetiques</a>
-                        <span class="sr-only">(current)</span>
+                        <a href="#" class="list-group-item">Bio Cosmetiques</a> 
                     </div>
                 </div>
+
 
             </div>
             <!-- /.col-lg-3 -->
@@ -44,28 +44,28 @@
                     </ol>
                     <div class="carousel-inner" role="listbox" align="center">
                         <div class="carousel-item active">
-                            <img class="d-block img-fluid" src="{{asset('shop/ca13.jpg')}}" style="width:60%;height:350px"  alt="Pagnes Africains">
+                            <img class="d-block img-fluid" src="{{asset('shop/cht8.jpg')}}" style="width:60%;height:350px"  alt="Pagnes Africains">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/ca1.jpg')}}" style="width:60%;height:350px" align="" alt="Costumes Africains">
+                            <img class="d-block img-fluid" src="{{asset('shop/cht9.jpg')}}" style="width:60%;height:350px" align="" alt="Costumes Africains">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/ca4.jpg')}}" style="width:60%;height:350px" alt="Chemises Tissées">
+                            <img class="d-block img-fluid" src="{{asset('shop/cp6.jpg')}}" style="width:60%;height:350px" alt="Chemises Tissées">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/ca6.jpg')}}" style="width:60%;height:350px" alt="Chemises Patchées">
+                            <img class="d-block img-fluid" src="{{asset('shop/cp10.jpg')}}" style="width:60%;height:350px" alt="Chemises Patchées">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/ca7.jpg')}}" style="width:60%;height:350px" alt="Bombers Woodin">
+                            <img class="d-block img-fluid" src="{{asset('shop/cht17.jpg')}}" style="width:60%;height:350px" alt="Bombers Woodin">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/ca9.jpg')}}" style="width:60%;height:350px" alt="Chaussures Tissées">
+                            <img class="d-block img-fluid" src="{{asset('shop/cht20.jpg')}}" style="width:60%;height:350px" alt="Chaussures Tissées">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/ca11.jpg')}}" style="width:60%px;height:350px" alt="Chaussures Woodin">
+                            <img class="d-block img-fluid" src="{{asset('shop/cht11.jpg')}}" style="width:60%px;height:350px" alt="Chaussures Woodin">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/ca12.jpg')}}" style="width:60%px;height:350px" alt="Chaussures Woodin">
+                            <img class="d-block img-fluid" src="{{asset('shop/cht12.jpg')}}" style="width:60%px;height:350px" alt="Chaussures Woodin">
                         </div>
 
                     </div>
@@ -83,7 +83,7 @@
                      @foreach($products as $product)
                     <div class="col-lg-4 col-md-6 mb-4">
                           <div class="card h-100">
-                            <a href="/product/product/{{$product->id}}"><img src="{{$product->images ? asset($product->images) : asset('uploads/images/default.png')}}" alt="{{$product->name}}" style="width:100%; height: 145px" ></a>
+                            <a href="/product/product/{{$product->id}}"><img src="{{$product->images ? asset($product->images) : asset('uploads/images/default.png')}}" alt="{{$product->name}}" title="voir photo" style="width:100%; height: 145px" ></a>
                             <div class="card-body">
                                 <h4 class="card-title">
                                     <a href="#">{{$product->name}}</a>

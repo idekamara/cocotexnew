@@ -6,7 +6,7 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
-class User extends Authenticatable
+class User extends Authenticatable implements MustVerifyEmail
 {
     use Notifiable;
 
@@ -19,7 +19,7 @@ class User extends Authenticatable
     /**Cett méthode va determiner si le user connecté a un role moderator*/
     public function isModerator()
     {
-        return strtolower(@$this->roles) === 'moderator'? true : false;
+        return strtolower(@$this->roles) === 'moderator'? true : fahomelse;
     }
 
     public function isUser()

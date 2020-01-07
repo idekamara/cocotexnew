@@ -5,9 +5,58 @@
  */
 body {
   padding-top: 56px;
+  background-color: #aca99d;
   /*background: url('../logo.jpg');*/
 }
 #menu {
   position: fixed;
   
+}
+.navbar-expand-lg {
+  padding-bottom: 0;
+  padding-top: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the search field */
+form.search input[type=texte] {
+  padding: 10px;
+  font-size: 17px;
+  border-radius: 4px;
+  border: 1px solid grey;
+  float: left;
+  width: 65%;
+  background: #f1f1f1;
+}
+
+form.search input[type=texte]:focus {
+  width: 85%;
+}
+
+/* Style the submit button */
+form.search button {
+  float: left;
+  width: 20%;
+  border-radius: 4px;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.search button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.search::after {
+  content: "";
+  clear: both;
+  display: table;
 }

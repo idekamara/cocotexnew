@@ -15,27 +15,10 @@ Route::get('/', function ()
 {
     return view('home');
 });*/
-/*
-Route::get('/produits', function()
-{
-	return "c'est un costume africain";
 
-});
-
-Route::get('/produits/{id}', function($id)
-{
-	return "Je suis un $id";
-});
-
-Route::get('/{id}', 'HomeController@show');
-
-
-Route::get('/categories/{id}', 'ProductsController@affiche');
-//Route::get('/', 'HomeController@index');//*/
-
-Auth::routes();
+//Auth::routes(['verify'=>true]);
 //route page d'accueil
-Route::get('/', 'HomeController@index')->name('home');
+Route::get('/welcome', 'HomeController@index')->name('welcome');
 Route::get('/home', 'HomeController@index')->name('home');
 //Route::get('/home', 'HomeController@index')->name('home');
 //routes pour les differentes operations sur les produits
@@ -43,14 +26,20 @@ Route::get('/products/index','ProductsController@index')->name('products.index')
 Route::get('/products/pagnes','ProductsController@afficherPagnes')->name('products.pagnes');
 Route::get('/products/costumes','ProductsController@afficherCostumes')->name('products.costumes');
 Route::get('/products/chemises','ProductsController@afficherChemises')->name('products.chemises');
+Route::get('/products/bombers','ProductsController@afficherBombers')->name('products.bombers');
 Route::get('/products/create','ProductsController@create')->name('products.create')->middleware('auth');
 Route::post('/products/store','ProductsController@store')->name('products.store');
 Route::post('/products/show','ProductsController@show')->name('products.show');
+//Route::get('category/{slug}/films', 'FilmController@index')->name('films.category');
+//Route::get("/categories/{slug}/allproducts", 'ProductsController@all')->name('products.all');
 Route::get('/product/edit/{id}', 'ProductsController@edit')->name('editer_produit');
 Route::patch('/product/edit/{id}', 'ProductsController@update')->name('updater_produit');
-Route::delete('/product/product/{id}', 'ProductsController@destroy')->name('supprimer_produit')->middleware('auth');;
+Route::delete('/product/product/{id}', 'ProductsController@destroy')->name('supprimer_produit')->middleware('auth');
 Route::get('/product/product/{id}','ProductsController@show')->name('image_product');
 
+Route::get('/contacts/create', 'ContactsController@create')->name('contacts.create');
+Route::post('/contacts/store', 'ContactsController@store')->name('contacts.store');
+Route::get('/contacts/confirmation', 'ContactsController@store')->name('confirmation');
 //Route::get('/login','LoginController@showLoginForm')->name('login');
 
 //routes pour les differentes operations sur les categories
@@ -60,6 +49,9 @@ Route::get('/category/edit/{id}', 'CategoriesController@edit')->name('editer_cat
 Route::patch("/category/edit/{id}", "CategoriesController@update")->name('updater_category');
 Route::delete('/category/category/{id}', 'CategoriesController@destroy')->name('supprimer_caregory');
 
+Route::get('/abonnement/expired', 'AbonnementController@expired');
+
+//Route::post('/ajout_category', 'AjaxController@ajout_category');
 
 
 Auth::routes();

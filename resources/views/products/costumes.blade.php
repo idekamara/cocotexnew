@@ -12,20 +12,20 @@
                     <div class="list-group">
                         <a href="{{route('products.pagnes')}}" class="list-group-item">Pagnes Africains</a>
                         <span class="sr-only">(current)</span>
-                        <a href="" class="list-group-item">Costumes Africains</a>
+                        <a href="{{route('products.costumes')}}" class="list-group-item">Costumes Africains</a>
                         <span class="sr-only">(current)</span>
                         <a href="{{route('products.chemises')}}" class="list-group-item">Chemises Africaines</a>
                         <span class="sr-only">(current)</span>
-                       <a href="#" class="list-group-item">Bombers Woodin</a>
+                        <a href="{{route('products.bombers')}}" class="list-group-item">Bombers Africains</a>
                         <span class="sr-only">(current)</span>
-                        <a href="#" class="list-group-item">Bombers Woodin</a>
+                        <a href="#" class="list-group-item">Chaussures en Woodin</a>
                         <span class="sr-only">(current)</span>
-                        <a href="#" class="list-group-item">Chaussures Woodin</a>
+                        <a href="#" class="list-group-item">HIJAB</a>
                         <span class="sr-only">(current)</span>
-                        <a href="#" class="list-group-item">Bio Cosmetiques</a>
-                        <span class="sr-only">(current)</span>
+                        <a href="#" class="list-group-item">Bio Cosmetiques</a> 
                     </div>
                 </div>
+
 
             </div>
             <!-- /.col-lg-3 -->

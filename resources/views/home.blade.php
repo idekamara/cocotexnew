@@ -1,26 +1,32 @@
 @extends('layout')
 @section('corps_page')
     <!-- Page Content -->
+  
     <div class="container">
 
         <div class="row">
 
             <div class="col-lg-3" >
-                <h4 class="my-3"><marquee behavior="alternate" direction="" scrollamount="" height="" width="" > L'Élégance du Textile</marquee></h4>
-
+                <h4 class="my-4"><marquee behavior="alternate" direction="" scrollamount="" height="" width="" > L'Élégance du Textile</marquee></h4>
+               
                 <div id="menu">
-                    <div class="list-group">
+                        <div class="list-group">
                         <a href="{{route('products.pagnes')}}" class="list-group-item">Pagnes Africains</a>
+                        <span class="sr-only">(current)</span>
                         <a href="{{route('products.costumes')}}" class="list-group-item">Costumes Africains</a>
-                        <a href="#" class="list-group-item">Chemises Tissees</a>
-                        <a href="#" class="list-group-item">Chemises Patchees</a>
-                        <a href="#" class="list-group-item">Bombers Woodin</a>
-                        <a href="#" class="list-group-item">Chaussures Tissees</a>
-                        <a href="#" class="list-group-item">Chaussures Woodin</a>
-                        <a href="#" class="list-group-item">Bio Cosmetiques</a>
-
+                        <span class="sr-only">(current)</span>
+                        <a href="{{route('products.chemises')}}" class="list-group-item">Chemises Africaines</a>
+                        <span class="sr-only">(current)</span>
+                        <a href="{{route('products.bombers')}}" class="list-group-item">Bombers en Woodin</a>
+                        <span class="sr-only">(current)</span>
+                        <a href="#" class="list-group-item">Chaussures en Woodin</a>
+                        <span class="sr-only">(current)</span>
+                        <a href="#" class="list-group-item">HIJAB</a>
+                        <span class="sr-only">(current)</span>
+                        <a href="#" class="list-group-item">Bio Cosmetiques</a> 
                     </div>
                 </div>
+
 
             </div>
             <!-- /.col-lg-3 -->
@@ -45,19 +51,19 @@
                             <img class="d-block img-fluid" src="{{asset('shop/ca0.jpg')}}" style="width:900px;height:350px" alt="Costumes Africains">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/ct1.jpg')}}" style="width:900px;height:350px" alt="Chemises Tissées">
+                            <img class="d-block img-fluid" src="{{asset('shop/cht12.jpg')}}" style="width:900px;height:350px" alt="Chemises Tissées">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/cp1.jpg')}}" style="width:900px;height:350px" alt="Chemises Patchées">
+                            <img class="d-block img-fluid" src="{{asset('shop/cp5.jpg')}}" style="width:900px;height:350px" alt="Chemises Patchées">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/bw0.jpg')}}" style="width:900px;height:350px" alt="Bombers Woodin">
+                            <img class="d-block img-fluid" src="{{asset('shop/bw3.jpg')}}" style="width:900px;height:350px" alt="Bombers Woodin">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/sh1.jpg')}}" style="width:900px;height:350px" alt="Chaussures Tissées">
+                            <img class="d-block img-fluid" src="{{asset('shop/shc.jpg')}}" style="width:900px;height:350px" alt="Chaussures Tissées">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/shc.jpg')}}" style="width:900px;height:350px" alt="Chaussures Woodin">
+                            <img class="d-block img-fluid" src="{{asset('shop/jb0.jpeg')}}" style="width:900px;height:350px" alt="Chaussures Woodin">
                         </div>
                         <div class="carousel-item">
                             <img class="d-block img-fluid" src="{{asset('shop/pc1.jpg')}}" style="width:900px;height:350px" alt="Chaussures Woodin">
@@ -78,7 +84,7 @@
 
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="{{asset('shop/w1.jpg')}}" style=" width:253px; height: 145px" alt=""></a>
+                            <a href="#"><img class="card-img-top" src="{{asset('shop/w1.jpg')}}" style=" width:100%; height: 145px" alt=""></a>
                             <div class="card-body">
                                 <h4 class="card-title">
                                     <a href="#">Adoration de Woodin</a>
@@ -94,7 +100,7 @@
 
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="{{asset('shop/w5.jpg')}}" style=" width:253px; height: 145px" alt=""></a>
+                            <a href="#"><img class="card-img-top" src="{{asset('shop/w5.jpg')}}" style=" width:100%; height: 145px" alt=""></a>
                             <div class="card-body">
                                 <h4 class="card-title">
                                     <a href="#">Fascination de Woodin</a>
@@ -110,7 +116,7 @@
 
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="{{asset('shop/w4.jpg')}}" style=" width:253px; height: 145px" alt=""></a>
+                            <a href="#"><img class="card-img-top" src="{{asset('shop/w4.jpg')}}" style=" width:100%; height: 145px" alt=""></a>
                             <div class="card-body">
                                 <h4 class="card-title">
                                     <a href="#">Harmonie de Woodin</a>
@@ -126,7 +132,7 @@
 
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="{{asset('shop/ca12.jpg')}}" style=" width:253px; height: 145px" alt=""></a>
+                            <a href="#"><img class="card-img-top" src="{{asset('shop/ca12.jpg')}}" style=" width:100%; height: 145px" alt=""></a>
                             <div class="card-body">
                                 <h4 class="card-title">
                                     <a href="#">Costume Africain</a>
@@ -142,7 +148,7 @@
 
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="{{asset('shop/ca8.jpg')}}" style=" width:253px; height: 145px" alt=""></a>
+                            <a href="#"><img class="card-img-top" src="{{asset('shop/ca8.jpg')}}" style=" width:100%; height: 145px" alt=""></a>
                             <div class="card-body">
                                 <h4 class="card-title">
                                     <a href="#">Costume Africain </a>
@@ -158,7 +164,7 @@
 
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="{{asset('shop/ca10.jpg')}}" style=" width:253px; height: 145px" alt=""></a>
+                            <a href="#"><img class="card-img-top" src="{{asset('shop/ca10.jpg')}}" style=" width:100%; height: 145px" alt=""></a>
                             <div class="card-body">
                                 <h4 class="card-title">
                                     <a href="#">Costume Africain</a>
@@ -174,7 +180,7 @@
 
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="{{asset('shop/shc.jpg')}}" style=" width:253px; height: 145px" alt=""></a>
+                            <a href="#"><img class="card-img-top" src="{{asset('shop/shc.jpg')}}" style=" width:100%; height: 145px" alt=""></a>
                             <div class="card-body">
                                 <h4 class="card-title">
                                     <a href="#">Adoration de Woodin</a>
@@ -190,7 +196,7 @@
 
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="{{asset('shop/sha.jpg')}}" style=" width:253px; height: 145px" alt=""></a>
+                            <a href="#"><img class="card-img-top" src="{{asset('shop/sha.jpg')}}" style=" width:100%; height: 145px" alt=""></a>
                             <div class="card-body">
                                 <h4 class="card-title">
                                     <a href="#">Fascination de Woodin</a>
@@ -206,7 +212,7 @@
 
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="{{asset('shop/shb.jpg')}}" style=" width:253px; height: 145px" alt=""></a>
+                            <a href="#"><img class="card-img-top" src="{{asset('shop/shb.jpg')}}" style=" width:100%; height: 145px" alt=""></a>
                             <div class="card-body">
                                 <h4 class="card-title">
                                     <a href="#">Harmonie de Woodin</a>

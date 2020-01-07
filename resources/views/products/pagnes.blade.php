@@ -16,7 +16,7 @@
                         <span class="sr-only">(current)</span>
                         <a href="{{route('products.chemises')}}" class="list-group-item">Chemises Africaines</a>
                         <span class="sr-only">(current)</span>
-                        <a href="#" class="list-group-item">Bombers en Woodin</a>
+                        <a href="{{route('products.bombers')}}" class="list-group-item">Bombers en Woodin</a>
                         <span class="sr-only">(current)</span>
                         <a href="#" class="list-group-item">Chaussures en Woodin</a>
                         <span class="sr-only">(current)</span>
@@ -96,106 +96,7 @@
                         </div>
                     </div>
                         @endforeach
-
-                    <!--    
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="{{asset('shop/w5.jpg')}}" style=" width:100%; height:145px" alt=""></a>
-                            <div class="card-body">
-                                <h4 class="card-title">
-                                    <a href="#">Fascination de Woodin</a>
-                                </h4>
-                                <h5>25.99 €</h5>
-                                <p class="card-text">Pagne Africain de qualité supérieure, 100% coton<br> Produit en Afrique. </p>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="{{asset('shop/w4.jpg')}}" style=" width:100%; height: 145px" alt=""></a>
-                            <div class="card-body">
-                                <h4 class="card-title">
-                                    <a href="#">Harmonie de Woodin</a>
-                                </h4>
-                                <h5>25.99 €</h5>
-                                <p class="card-text">Pagne Africain de qualité supérieure, 100% coton<br> Produit en Afrique. </p>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="{{asset('shop/ca12.jpg')}}" style=" width:100%; height: 150px" alt=""></a>
-                            <div class="card-body">
-                                <h4 class="card-title">
-                                    <a href="#">Costume Africain</a>
-                                </h4>
-                                <h5>45.99 €</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="{{asset('shop/ca8.jpg')}}" style=" width:100%; height: 150px" alt=""></a>
-                            <div class="card-body">
-                                <h4 class="card-title">
-                                    <a href="#">Costume Africain </a>
-                                </h4>
-                                <h5>45.99 €</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="{{asset('shop/ca10.jpg')}}" style=" width:100%; height: 160px" alt=""></a>
-                            <div class="card-body">
-                                <h4 class="card-title">
-                                    <a href="#">Costume Africain</a>
-                                </h4>
-                                <h5>$24.99</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="{{asset('shop/shc.jpg')}}" style=" width:253px; height: 145px" alt=""></a>
-                            <div class="card-body">
-                                <h4 class="card-title">
-                                    <a href="#">Adoration de Woodin</a>
-                                </h4>
-                                <h5>25.99 €</h5>
-                                <p class="card-text">Pagne Africain de qualité supérieure, 100% coton<br> Produit en Afrique. </p>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                            </div>
-                        </div>
-                    </div>
-
-                   -->
-
+                  
                 </div>
                 <!-- /.row -->
 

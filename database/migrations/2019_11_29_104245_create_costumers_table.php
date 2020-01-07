@@ -18,8 +18,9 @@ class CreateCostumersTable extends Migration
             $table->string('firstname');
             $table->string('name');
             $table->integer('phone');
-            $table->text('email');
+            $table->string('email')->unique();
             $table->text('adress');
+            $table->text('message');
             $table->timestamps();
         });
     }

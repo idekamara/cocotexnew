@@ -14,24 +14,24 @@
         <form action="{{route('products.store')}}" method="post" enctype="multipart/form-data">
             @csrf
             <div>
-                <input type="text" name="name" class="form-control" placeholder="le nom du produit *">
+                <input type="text" name="name"  placeholder="le nom du produit *">
             </div>
             <div>
-                <input type="text" name="price" class="form-control" placeholder="Le prix du produit *">
+                <input type="text" name="price" placeholder="Le prix du produit *">
             </div>
             <div>
-                <textarea name="description" id="description" cols="30" rows="10" class="form-control" placeholder="La description"></textarea>
+                <textarea name="description" class="description" id="description"></textarea>
             </div>
 
             <div>
-                <select name="category_id" id="category_id" class="form-control" placeholder="La catégorie">
-                    <option value=""></option>
+                <select name="category_id" id="category_id" placeholder="La catégorie">
+                    <option hidden >Choisir une Catégorie</option>
                     @foreach($categories as $key => $value)
                         <option value="{{$key}}">{{$value}}</option>
                     @endforeach
                 </select>
             </div>
-                <div><input type="file" name="product_image" class="form-control"></div>
+                <div><input type="file" name="product_image"></div>
             <div>
                 <button class="btn btn-primary">Enregistrer</button>
             </div>

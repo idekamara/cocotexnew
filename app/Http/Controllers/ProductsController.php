@@ -1,20 +1,15 @@
 <?php
-
 namespace App\Http\Controllers;
 //importe les classes
 use App\Product;
-
 use Illuminate\Http\Request;
-
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Storage;
 //use Illuminate\Support\Str;
-
 class ProductsController extends Controller
 {
-
     //ce construreur aura pour effet de fermer toutes les méthodes du contrôleur au utilisateurs non connectés.
     public function __construct()
     {
@@ -31,29 +26,28 @@ class ProductsController extends Controller
         #$products = Product::all();
        // dd($products);
         $products = \App\Product::orderBy('created_at', 'DESC')->get();
-
         return view('products.index', compact('products'));
     }
-
     public function afficherPagnes()
     {      
         $products = \App\Product::where('category_id',1)->orderBy('created_at', 'DESC')->get();
         return view('products.pagnes', compact('products'));
     }
-
     public function afficherCostumes()
     {
        $products = \App\Product::where('category_id',2)->orderBy('created_at', 'DESC')->get();
        return view('products.costumes', compact('products'));
     }
-
     public function afficherChemises()
     {
        $products = \App\Product::where('category_id',3)->orderBy('created_at', 'DESC')->get();
        return view('products.chemises', compact('products'));
     }
-
-
+    public function afficherBombers()
+    {
+       $products = \App\Product::where('category_id',6)->orderBy('created_at', 'DESC')->get();
+       return view('products.bombers', compact('products'));
+    }
 
     /**
      * Show the form for creating a new resource.
@@ -66,11 +60,8 @@ class ProductsController extends Controller
         $categories = \App\Category::pluck('name','id');
         $products = \App\Product::all();
         return view('products.create', compact('categories','products'));
-
         //return view('products.create');
-
     }
-
     /**
      * Store a newly created resource in storage.
      *
@@ -85,9 +76,7 @@ class ProductsController extends Controller
             'price' => 'required|numeric',
             'description' => 'max:1000000',
             'product_image' => 'nullable | max:4096']);
-
         $product = new Product();
-
           //On verfie si une image est envoyée
           if($request->has('product_image'))
           {
@@ -111,7 +100,6 @@ class ProductsController extends Controller
         //return redirect(route('products.index'));
        //return redirect()->back();
     }
-
     //cette méthode gére l’enregistrement des fichiers uploadé
     public function uploadImage(UploadedFile $uploadedFile, 
                                                  $folder = null,
@@ -120,12 +108,8 @@ class ProductsController extends Controller
         {
             $name = !is_null($filename) ? $filename : str_random('25');
             $file = $uploadedFile->storeAs($folder, $name.'.'.$uploadedFile->getClientOriginalExtension(), $disk);
-
         return $file;
         }
-
-
-
     /**
      * Display the specified resource.
      *
@@ -138,7 +122,6 @@ class ProductsController extends Controller
         $products = \App\Product::pluck('id','images');
         return view('products.show',compact('product','products'));
     }
-
     /**
      * Show the form for editing the specified resource.
      *
@@ -152,10 +135,7 @@ class ProductsController extends Controller
         $product = \App\Product::find($id);
         $categories = \App\Category::pluck('name','id');
         return view('products.edit', compact('product','categories'));
-
-
     }
-
     /**
      * Update the specified resource in storage.
      *
@@ -174,7 +154,6 @@ class ProductsController extends Controller
         'category_id' => $request->input('category_id'),
         ]);
         }*/
-
         $data = $request->validate([
         'name'   => 'required',
         'price' => 'required | numeric',
@@ -197,12 +176,10 @@ class ProductsController extends Controller
         $product->price = $request->input('price');
         $product->description = $request->input('description');
         $product->category_id = $request->input('category_id');
-
         $product->save();
         return redirect('/products/index');
     }
 }
-
     /**
      * Remove the specified resource from storage.
      *
@@ -218,6 +195,39 @@ class ProductsController extends Controller
         //return redirect()->route('products.index');
         return redirect('/products/index');
     
-
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
