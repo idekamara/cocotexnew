@@ -18,7 +18,7 @@ Route::get('/', function ()
 
 //Auth::routes(['verify'=>true]);
 //route page d'accueil
-Route::get('/welcome', 'HomeController@index')->name('welcome');
+Route::get('/home', 'HomeController@index')->name('welcome');
 Route::get('/', 'HomeController@index')->name('home');
 //Route::get('/home', 'HomeController@index')->name('home');
 //routes pour les differentes operations sur les produits
