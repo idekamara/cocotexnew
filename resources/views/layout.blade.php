@@ -70,7 +70,7 @@
                                   @can('admin')
                                 <a class="dropdown-item" href="{{ route('products.index') }}" title="Gérer les produits"><i class="fa fa-cogs fa-lg" aria-hidden="true" style="color: #000"></i>&nbsp;{{ __('Back Office') }}</a>
                                   @endcan
-                                    <a class="dropdown-item" href="{{ route('home') }}"
+                                    <a class="dropdown-item" href="{{ route('/') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();" title="Quitter">
                                         <i class="fa fa-sign-out fa-lg" aria-hidden="true" style="color: #000"></i>&nbsp;{{ __('Déconnexion') }}
