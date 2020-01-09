@@ -193,7 +193,7 @@ form.search::after {
 
 
 </style>
-
+<!--
 <style>
   #snowflakeContainer {
     position: absolute;
@@ -391,6 +391,7 @@ form.search::after {
     resetPosition = true;
   }
 </script>
+-->
 </body>
 
 </html>
