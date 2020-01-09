@@ -96,7 +96,7 @@ class ProductsController extends Controller
         $product->description = $request->input('description');
         $product->category_id = $request->input('category_id');
         $product->save();
-        return redirect('/products/index');
+        return redirect('/products/index')->with('info', 'Le produit a bien été ajouté');
         //return redirect(route('products.index'));
        //return redirect()->back();
     }
@@ -177,7 +177,7 @@ class ProductsController extends Controller
         $product->description = $request->input('description');
         $product->category_id = $request->input('category_id');
         $product->save();
-        return redirect('/products/index');
+        return redirect('/products/index')->with('info', 'Le produit a bien été modifié');
     }
 }
     /**
