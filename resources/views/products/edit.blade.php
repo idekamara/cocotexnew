@@ -16,7 +16,7 @@
     </select>
     </div>
     <div class="row">
-   <div class="col-6 text-right"><img src="{{asset($product->images)}}" alt="{{$product->name}}" width="100"></div><div class="col-6"><h3>Chargez une autre image pour remplacer celle-ci</h3></div>
+   <div class="col-6 text-right"><img src="{{asset($product->images)}}" alt="{{$product->name}}" width="100"></div><div class="col-6"><h3>Chargez une autre image pour remplacer celle-ci</h3></div>localhost:8000
 </div>
 <div>
    <input type="file" name="product_image" class="form-control">

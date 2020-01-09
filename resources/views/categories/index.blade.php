@@ -39,12 +39,12 @@
                 <td>{{$category->description}}</td>
                 <td>
                     <p>
-                        <a href="{{route('editer_category',['id'=>$category->id])}}"><input type="submit" class="btn btn-success" name="delete" value="Editer"></a>
+                        <a class="btn btn-primary btn-sm" href="{{route('editer_category',['id'=>$category->id])}}" title="Modifier la Catégorie"><i class="fa fa-cog">&nbsp;Modifier</i></a>
                     </p>
-                    <form action="/category/category/{{$category->id}}" method="post">
+                    <form action="/category/category/{{$category->id}}" method="post" onsubmit="return confirm('Voulez vous Supprimer la Catégorie : {{$category->name}} ?');">
                          @csrf
                         @method('delete')
-                        <input type="submit" class="btn btn-danger" name="delete" value="Supprimer">
+                        <button type="submit" class="btn btn-danger btn-sm" title="Supprimer la Catégorie"><i class="fa fa-trash-o fa-sm">&nbsp;Supprimer</i></button>
                     </form>
 
                 </td>
