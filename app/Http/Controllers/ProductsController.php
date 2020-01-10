@@ -72,7 +72,7 @@ class ProductsController extends Controller
     public function store(Request $request)
     {
         $data = $request->validate([
-            'name'=>'required|max:300|min:5',
+            'name'=>'required|max:300|min:3',
             'price' => 'required|numeric',
             'description' => 'max:1000000',
             'product_image' => 'nullable | max:4096']);
