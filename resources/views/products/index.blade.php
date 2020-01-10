@@ -24,11 +24,11 @@
                 <td> {{ $product->category->name ?? '' }}</td>
                 <td>{{$product->description}}</td>
                 <td>
-                    <p>
+                    
                         <a class="btn btn-primary btn-sm" href="{{route('editer_produit',['id'=>$product->id])}}" title="Modifier le produit">
 
                             <i class="fa fa-cog">&nbsp;Modifier</i></a>
-                    </p>
+                    
 
                     <form action="/product/product/{{$product->id}}" method="post" onsubmit="return confirm('Voulez vous Supprimer le produit: {{$product->name}} ?');">
                          @csrf
