@@ -22,7 +22,7 @@
                 <td><a href="/product/product/{{$product->id}}">{{$product->name}}</a> <img src="{{$product->images ? asset($product->images) : asset('uploads/images/default.png')}}" alt="{{$product->name}}" width="50" height="60"></td>
                 <td>{{$product->price}}</td>
                 <td> {{ $product->category->name ?? '' }}</td>
-                <td>{{$product->description}}</td>
+                <td>{!!$product->description!!}</td>
                 <td>
                     
                         <a class="btn btn-primary btn-sm" href="{{route('editer_produit',['id'=>$product->id])}}" title="Modifier le produit">

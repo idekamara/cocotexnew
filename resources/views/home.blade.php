@@ -66,7 +66,7 @@
                             <img class="d-block img-fluid" src="{{asset('shop/jb0.jpeg')}}" style="width:900px;height:350px" alt="Chaussures Woodin">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/pc1.jpg')}}" style="width:900px;height:350px" alt="Chaussures Woodin">
+                            <img class="d-block img-fluid" src="{{asset('shop/bc0.jpg')}}" style="width:900px;height:350px" alt="Chaussures Woodin">
                         </div>
 
                     </div>
