@@ -1,13 +1,27 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\User;
 use Illuminate\Http\Request;
 use App\Http\Requests\ContactsRequest;
 
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Storage;
 
 class ContactsController extends Controller
 {
+    
+    public function index()
+    {
+        # on recupere l'ensemble des produits
+        #$products = Product::all();
+       // dd($products);
+        $users = \App\User::orderBy('created_at', 'DESC')->get();
+        return view('contacts.index', compact('users'));
+    }
+
+
+
     public function create()
     {
         
@@ -16,6 +30,26 @@ class ContactsController extends Controller
         return view('contacts.create');
     }
 
+    public function edit($id)
+    {
+        //$this->authorize('admin');
+        //on recupere le produit avec la methode find()
+        $users = \App\User::find($id);
+        //$categories = \App\Category::pluck('name','id');
+        return view('contacts.edit', compact('users'));
+    }
+
+    public function update(Request $request, $id)
+    {
+        $users = \App\User::find($id);
+        if($users){
+            $users->name = $request->input('name');
+            $users->email = $request->input('email');
+            $users->roles = $request->input('role');
+            $users->save();
+        }
+        return view('/contacts/index')->with('info', 'Le User a bien été modifié');
+    }
 
     public function store(ContactsRequest $request)
     {
@@ -38,5 +72,16 @@ class ContactsController extends Controller
 
         return view('/contacts/confirmation');
 	}
+
+    public function destroy($id)
+    {
+        //$this->authorize('admin');
+        $users = User::find($id);
+        if($users)
+        $users->delete();
+        //return redirect()->route('products.index');
+        return redirect('/contacts/index');
+    
+    }
 
 }

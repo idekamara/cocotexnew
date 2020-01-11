@@ -40,6 +40,10 @@ Route::get('/product/product/{id}','ProductsController@show')->name('image_produ
 Route::get('/contacts/create', 'ContactsController@create')->name('contacts.create');
 Route::post('/contacts/store', 'ContactsController@store')->name('contacts.store');
 Route::get('/contacts/confirmation', 'ContactsController@store')->name('confirmation');
+Route::get('/contacts/index','ContactsController@index')->name('contacts.index');
+Route::delete('/contacts/user/{id}', 'ContactsController@destroy')->name('supprimer_user')->middleware('auth');
+Route::get('/contacts/edit/{id}', 'ContactsController@edit')->name('editer_user');
+Route::patch('/contacts/edit/{id}', 'ContactsController@update')->name('updater_user');
 //Route::get('/login','LoginController@showLoginForm')->name('login');
 
 //routes pour les differentes operations sur les categories
