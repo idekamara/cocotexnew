@@ -68,12 +68,18 @@
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                   @can('admin')
-                                <a class="dropdown-item" href="{{ route('products.index') }}" title="Gérer les produits"><i class="fa fa-cogs fa-lg" aria-hidden="true" style="color: #000"></i>&nbsp;{{ __('Back Office') }}</a>
+                                  <a class="dropdown-item" href="{{ route('categories.index') }}" title="Gérer les Categories"><i class="fa fa-cogs fa-lg" aria-hidden="true" style="color: yellow"></i>&nbsp;{{ __('Gestion Categories') }}</a>
+                                <a class="dropdown-item" href="{{ route('products.index') }}" title="Gérer les produits"><i class="fa fa-cogs fa-lg" aria-hidden="true" style="color: orange"></i>&nbsp;{{ __('Gestion Produits') }}</a>
+                                <a class="dropdown-item" href="{{ route('contacts.index') }}" title="Gérer les utilisateurs"><i class="fa fa-user fa-lg" aria-hidden="true" style="color: green"></i>&nbsp;{{ __('Gestion Users') }}</a>
                                   @endcan
+                                  @can('moderator')
+                                  <a class="dropdown-item" href="{{ route('categories.index') }}" title="Gérer les Categories"><i class="fa fa-cogs fa-lg" aria-hidden="true" style="color: yellow"></i>&nbsp;{{ __('Gestion Categories') }}</a>
+                                <a class="dropdown-item" href="{{ route('products.index') }}" title="Gérer les produits"><i class="fa fa-cogs fa-lg" aria-hidden="true" style="color: orange"></i>&nbsp;{{ __('Gestion Produits') }}</a>
+                                @endcan
                                     <a class="dropdown-item" href="{{ route('home') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();" title="Quitter">
-                                        <i class="fa fa-sign-out fa-lg" aria-hidden="true" style="color: #000"></i>&nbsp;{{ __('Déconnexion') }}
+                                        <i class="fa fa-sign-out fa-lg" aria-hidden="true" style="color: red"></i>&nbsp;{{ __('Déconnexion') }}
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

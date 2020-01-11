@@ -5,7 +5,7 @@
     <div class="container">
         <div><p><h2 >{{__('Liste des utilisateurs')}}</h2></p></div>
         <div><p><a class="btn btn-success" href="{{route('register')}}" title="Ajouter un utilisateur">
-            <i class="fa fa-user-plus fa-lg" aria-hidden="true"></i>&nbsp;Utilisateur</i></a></p></div>
+            <i class="fa fa-user-plus fa-lg" aria-hidden="true"></i>&nbsp;Ajouter</i></a></p></div>
     @if(session()->has('info'))
     <div class="btn btn-success"><i class="fa fa-commenting" aria-hidden="true"></i>
         {{ session('info') }}
@@ -24,7 +24,7 @@
                 <td> {{$user->roles}}</td>
                 <td>
                     
-                        <a class="btn btn-primary btn-sm" href="{{route('editer_user',['id'=>$user->id])}}" title="Modifier l'utilisateur">
+                        <a class="btn btn-primary btn-sm" href="{{route('editer_user',['id'=>$user->id])}}" title="Modifier l\'utilisateur">
 
                             <i class="fa fa-cog">&nbsp;Modifier</i></a>
                     

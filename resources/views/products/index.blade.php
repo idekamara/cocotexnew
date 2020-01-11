@@ -7,7 +7,7 @@
         <div><p><a class="btn btn-success" href="{{route('products.create')}}" title="Ajouter un produit">
             <i class="fa fa-plus-circle" aria-hidden="true">&nbsp;Produit</i></a></p></div>
     @if(session()->has('info'))
-    <div class="btn btn-success"><i class="fa fa-commenting" aria-hidden="true"></i>
+    <div class="btn btn-success"><i class="fa fa-commenting fa-2x" aria-hidden="true"></i>
         {{ session('info') }}
     </div>
     @endif

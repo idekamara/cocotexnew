@@ -37,7 +37,7 @@ Route::patch('/product/edit/{id}', 'ProductsController@update')->name('updater_p
 Route::delete('/product/product/{id}', 'ProductsController@destroy')->name('supprimer_produit')->middleware('auth');
 Route::get('/product/product/{id}','ProductsController@show')->name('image_product');
 
-Route::get('/contacts/create', 'ContactsController@create')->name('contacts.create');
+Route::get('/contacts/create', 'ContactsController@create')->name('contacts.create')->middleware('auth');
 Route::post('/contacts/store', 'ContactsController@store')->name('contacts.store');
 Route::get('/contacts/confirmation', 'ContactsController@store')->name('confirmation');
 Route::get('/contacts/index','ContactsController@index')->name('contacts.index')->middleware('auth');

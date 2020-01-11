@@ -19,7 +19,7 @@ class User extends Authenticatable
     /**Cett méthode va determiner si le user connecté a un role moderator*/
     public function isModerator()
     {
-        return strtolower(@$this->roles) === 'moderator'? true : fahomelse;
+        return strtolower(@$this->roles) === 'moderator'? true : false;
     }
 
     public function isUser()
