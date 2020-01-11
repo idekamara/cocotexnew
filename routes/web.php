@@ -22,7 +22,7 @@ Route::get('/home', 'HomeController@index')->name('welcome');
 Route::get('/', 'HomeController@index')->name('home');
 //Route::get('/home', 'HomeController@index')->name('home');
 //routes pour les differentes operations sur les produits
-Route::get('/products/index','ProductsController@index')->name('products.index');
+Route::get('/products/index','ProductsController@index')->name('products.index')->middleware('auth');
 Route::get('/products/pagnes','ProductsController@afficherPagnes')->name('products.pagnes');
 Route::get('/products/costumes','ProductsController@afficherCostumes')->name('products.costumes');
 Route::get('/products/chemises','ProductsController@afficherChemises')->name('products.chemises');
@@ -40,9 +40,9 @@ Route::get('/product/product/{id}','ProductsController@show')->name('image_produ
 Route::get('/contacts/create', 'ContactsController@create')->name('contacts.create');
 Route::post('/contacts/store', 'ContactsController@store')->name('contacts.store');
 Route::get('/contacts/confirmation', 'ContactsController@store')->name('confirmation');
-Route::get('/contacts/index','ContactsController@index')->name('contacts.index');
+Route::get('/contacts/index','ContactsController@index')->name('contacts.index')->middleware('auth');
 Route::delete('/contacts/user/{id}', 'ContactsController@destroy')->name('supprimer_user')->middleware('auth');
-Route::get('/contacts/edit/{id}', 'ContactsController@edit')->name('editer_user');
+Route::get('/contacts/edit/{id}', 'ContactsController@edit')->name('editer_user')->middleware('auth');
 Route::patch('/contacts/edit/{id}', 'ContactsController@update')->name('updater_user');
 //Route::get('/login','LoginController@showLoginForm')->name('login');
 

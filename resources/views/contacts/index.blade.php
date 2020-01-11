@@ -14,7 +14,7 @@
     </div>
     <table class="table table-striped">
         <tr>
-            <th>Id</th>          <th>Nom User</th>           <th>Email</th>           <th>Roles</th>               <th>Mettre à jour</th>
+            <th>Id</th>          <th>Nom</th>           <th>Email</th>           <th>Profil</th>               <th>Mettre à jour</th>
         </tr>
         @foreach($users as $user)
             <tr>

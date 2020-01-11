@@ -16,6 +16,7 @@ class ContactsController extends Controller
         # on recupere l'ensemble des produits
         #$products = Product::all();
        // dd($products);
+        $this->authorize('admin');
         $users = \App\User::orderBy('created_at', 'DESC')->get();
         return view('contacts.index', compact('users'));
     }
@@ -32,7 +33,7 @@ class ContactsController extends Controller
 
     public function edit($id)
     {
-        //$this->authorize('admin');
+        $this->authorize('admin');
         //on recupere le produit avec la methode find()
         $users = \App\User::find($id);
         //$categories = \App\Category::pluck('name','id');
@@ -75,7 +76,7 @@ class ContactsController extends Controller
 
     public function destroy($id)
     {
-        //$this->authorize('admin');
+        $this->authorize('admin');
         $users = User::find($id);
         if($users)
         $users->delete();
