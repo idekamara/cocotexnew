@@ -16,7 +16,7 @@
         <tr>
             <th>Id</th>          <th>Nom User</th>           <th>Email</th>           <th>Roles</th>               <th>Mettre à jour</th>
         </tr>
-        @foreach({{$users ?? ''}} as {{$user}})
+        @foreach($users as $user)
             <tr>
                 <td> {{$user->id}} </td>
                 <td>{{$user->name}}</td>
@@ -33,8 +33,7 @@
                          @csrf
                         @method('delete')
                         <button type="submit" class="btn btn-danger btn-sm" title="Supprimer l'utilisateur"><i class="fa fa-trash-o fa-sm">&nbsp;Supprimer</i></button>
-                       <!-- <input type="submit" class="btn btn-danger btn-sm" name="delete" value="Supprimer"> -->
-                    </form>
+                      </form>
 
 
                 </td>
