@@ -24,7 +24,7 @@
                 <td> {{$user->roles}}</td>
                 <td>
                     
-                        <a class="btn btn-primary btn-sm" href="{{route('editer_user',['id'=>$user->id])}}" title="Modifier l\'utilisateur">
+                        <a class="btn btn-primary btn-sm" href="{{route('editer_user',['id'=>$user->id])}}" title="Modifier l'utilisateur">
 
                             <i class="fa fa-cog">&nbsp;Modifier</i></a>
                     

@@ -151,7 +151,11 @@ input[type=submit], button {
 
 
 a.nav-link:hover{
-  background-color: #000;
+  background-color: grey;
+}
+
+a.dropdown-item:hover{
+  background-color: grey;
 }
 i.fa {
   color: #FFF;

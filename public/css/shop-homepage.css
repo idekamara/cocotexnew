@@ -21,6 +21,7 @@ body {
   box-sizing: border-box;
 }
 
+
 /* Style the search field */
 form.search input[type=texte] {
   padding: 10px;
