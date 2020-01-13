@@ -59,7 +59,7 @@
                             <img class="d-block img-fluid" src="{{asset('shop/bc8.jpg')}}" style="width:60%;height:350px" alt="Bombers Woodin">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/bbc13.jpg')}}" style="width:60%;height:350px" alt="Chaussures Tissées">
+                            <img class="d-block img-fluid" src="{{asset('shop/bc13.jpg')}}" style="width:60%;height:350px" alt="Chaussures Tissées">
                         </div>
                         <div class="carousel-item">
                             <img class="d-block img-fluid" src="{{asset('shop/bc0.jpg')}}" style="width:60%;height:350px" alt="Chaussures Woodin">

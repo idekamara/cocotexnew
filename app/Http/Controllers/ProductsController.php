@@ -56,7 +56,7 @@ class ProductsController extends Controller
     public function afficherBiocos()
     {
        $products = \App\Product::where('category_id',51)->orderBy('created_at', 'DESC')->get();
-       return view('products.bombers', compact('products'));
+       return view('products.biocos', compact('products'));
     }
 
 
