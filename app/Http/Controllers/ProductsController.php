@@ -35,7 +35,7 @@ class ProductsController extends Controller
     }
     public function afficherCostumes()
     {
-       $products = \App\Product::where('category_id',2)->orderBy('created_at', 'DESC')->get();
+       $products = \App\Product::where('category_id',11)->orderBy('created_at', 'DESC')->get();
        return view('products.costumes', compact('products'));
     }
     public function afficherChemises()
