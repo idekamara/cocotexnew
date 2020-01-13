@@ -22,7 +22,7 @@
                         <span class="sr-only">(current)</span>
                         <a href="#" class="list-group-item">HIJAB</a>
                         <span class="sr-only">(current)</span>
-                        <a href="#" class="list-group-item">Bio Cosmetiques</a> 
+                        <a href="{{route('products.biocos')}}" class="list-group-item">Bio Cosmetiques</a> 
                     </div>
                 </div>
 

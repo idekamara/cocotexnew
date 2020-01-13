@@ -40,14 +40,25 @@ class ProductsController extends Controller
     }
     public function afficherChemises()
     {
-       $products = \App\Product::where('category_id',3)->orderBy('created_at', 'DESC')->get();
+       $products = \App\Product::where('category_id',21)->orderBy('created_at', 'DESC')->get();
        return view('products.chemises', compact('products'));
     }
     public function afficherBombers()
     {
-       $products = \App\Product::where('category_id',6)->orderBy('created_at', 'DESC')->get();
+       $products = \App\Product::where('category_id',31)->orderBy('created_at', 'DESC')->get();
        return view('products.bombers', compact('products'));
     }
+    public function afficherChaussures()
+    {
+       $products = \App\Product::where('category_id',41)->orderBy('created_at', 'DESC')->get();
+       return view('products.shoes', compact('products'));
+    }
+    public function afficherBiocos()
+    {
+       $products = \App\Product::where('category_id',51)->orderBy('created_at', 'DESC')->get();
+       return view('products.bombers', compact('products'));
+    }
+
 
     /**
      * Show the form for creating a new resource.

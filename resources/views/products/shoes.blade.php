@@ -6,7 +6,7 @@
         <div class="row">
 
             <div class="col-lg-3" >
-                <h4 class="my-3"><marquee  direction="" scrollamount="" height="" width="" > L'Élégance des Chemises Africaines</marquee></h4>
+                <h4 class="my-3"><marquee  direction="" scrollamount="" height="" width="" > L'Élégance des Chaussures CocoTex</marquee></h4>
 
                 <div id="menu">
                     <div class="list-group">
@@ -44,28 +44,28 @@
                     </ol>
                     <div class="carousel-inner" role="listbox" align="center">
                         <div class="carousel-item active">
-                            <img class="d-block img-fluid" src="{{asset('shop/cht8.jpg')}}" style="width:60%;height:350px"  alt="Pagnes Africains">
+                            <img class="d-block img-fluid" src="{{asset('shop/sh03.jpg')}}" style="width:60%;height:350px"  alt="Pagnes Africains">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/cht9.jpg')}}" style="width:60%;height:350px" align="" alt="Costumes Africains">
+                            <img class="d-block img-fluid" src="{{asset('shop/sh02.jpg')}}" style="width:60%;height:350px" align="" alt="Costumes Africains">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/cp6.jpg')}}" style="width:60%;height:350px" alt="Chemises Tissées">
+                            <img class="d-block img-fluid" src="{{asset('shop/sh07.jpg')}}" style="width:60%;height:350px" alt="Chemises Tissées">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/cp10.jpg')}}" style="width:60%;height:350px" alt="Chemises Patchées">
+                            <img class="d-block img-fluid" src="{{asset('shop/sh10.jpg')}}" style="width:60%;height:350px" alt="Chemises Patchées">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/cht17.jpg')}}" style="width:60%;height:350px" alt="Bombers Woodin">
+                            <img class="d-block img-fluid" src="{{asset('shop/sh09.jpg')}}" style="width:60%;height:350px" alt="Bombers Woodin">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/cht20.jpg')}}" style="width:60%;height:350px" alt="Chaussures Tissées">
+                            <img class="d-block img-fluid" src="{{asset('shop/sh04.jpg')}}" style="width:60%;height:350px" alt="Chaussures Tissées">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/cht11.jpg')}}" style="width:60%px;height:350px" alt="Chaussures Woodin">
+                            <img class="d-block img-fluid" src="{{asset('shop/sh06.jpg')}}" style="width:60%;height:350px" alt="Chaussures Woodin">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/cht12.jpg')}}" style="width:60%px;height:350px" alt="Chaussures Woodin">
+                            <img class="d-block img-fluid" src="{{asset('shop/shd.jpg')}}" style="width:60%;height:350px" alt="Chaussures Woodin">
                         </div>
 
                     </div>
@@ -83,7 +83,7 @@
                      @foreach($products as $product)
                     <div class="col-lg-4 col-md-6 mb-4">
                           <div class="card h-100">
-                            <a href="/product/product/{{$product->id}}"><img src="{{$product->images ? asset($product->images) : asset('uploads/images/default.png')}}" alt="{{$product->name}}" title="voir photo" style="width:100%; height: 145px" ></a>
+                            <a href="/product/product/{{$product->id}}"><img src="{{$product->images ? asset($product->images) : asset('uploads/images/default.png')}}" alt="{{$product->name}}" style="width:100%; height: 145px" ></a>
                             <div class="card-body">
                                 <h4 class="card-title">
                                     <a href="#">{{$product->name}}</a>
