@@ -20,7 +20,7 @@
                 <input type="text" name="price" placeholder="Le prix du produit *">
             </div>
             <div>
-                <textarea name="description" class="description" id="description"></textarea>
+                <textarea name="description" class="descript" cols="110" rows="10" id="description" placeholder="Description du produit"></textarea>
             </div>
 
             <div>
