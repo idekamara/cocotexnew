@@ -48,15 +48,15 @@ class ProductsController extends Controller
        $products = \App\Product::where('category_id',31)->orderBy('created_at', 'DESC')->get();
        return view('products.bombers', compact('products'));
     }
-    public function afficherChaussures()
+    public function afficherShoes()
     {
        $products = \App\Product::where('category_id',41)->orderBy('created_at', 'DESC')->get();
        return view('products.shoes', compact('products'));
     }
     public function afficherBiocos()
     {
-       $products = \App\Product::where('category_id',51)->orderBy('created_at', 'DESC')->get();
-       return view('products.biocos', compact('products'));
+       $products = \App\Product::where('category_id',1)->orderBy('created_at', 'DESC')->get();
+       return view('products.bombers', compact('products'));
     }
 
 

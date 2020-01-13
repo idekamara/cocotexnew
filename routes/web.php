@@ -27,7 +27,7 @@ Route::get('/products/pagnes','ProductsController@afficherPagnes')->name('produc
 Route::get('/products/costumes','ProductsController@afficherCostumes')->name('products.costumes');
 Route::get('/products/chemises','ProductsController@afficherChemises')->name('products.chemises');
 Route::get('/products/bombers','ProductsController@afficherBombers')->name('products.bombers');
-Route::get('/products/shoes','ProductsController@afficherChaussures')->name('products.shoes');
+Route::get('/products/shoes','ProductsController@afficherShoes')->name('products.shoes');
 Route::get('/products/biocos','ProductsController@afficherBiocos')->name('products.biocos');
 Route::get('/products/create','ProductsController@create')->name('products.create')->middleware('auth');
 Route::post('/products/store','ProductsController@store')->name('products.store');
