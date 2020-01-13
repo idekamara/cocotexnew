@@ -48,8 +48,8 @@ Route::patch('/contacts/edit/{id}', 'ContactsController@update')->name('updater_
 
 //routes pour les differentes operations sur les categories
 
-Route::resource('categories', 'CategoriesController');
-Route::get('/category/edit/{id}', 'CategoriesController@edit')->name('editer_category');
+Route::resource('categories', 'CategoriesController')->middleware('auth');
+Route::get('/category/edit/{id}', 'CategoriesController@edit')->name('editer_category')->middleware('auth');
 Route::patch("/category/edit/{id}", "CategoriesController@update")->name('updater_category');
 Route::delete('/category/category/{id}', 'CategoriesController@destroy')->name('supprimer_caregory');
 
