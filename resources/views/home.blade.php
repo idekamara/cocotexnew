@@ -324,6 +324,54 @@
                         </div>
                     </div>
 
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <a href="#"><img class="card-img-top" src="{{asset('shop/bc0.jpg')}}" style=" width:100%; height: 145px" alt=""></a>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <a href="#">Gamme de Chébé</a>
+                                </h4>
+                                <h5>10000 F CFA</h5>
+                                <p class="card-text"> pour le traitement de cheveux pour les Femmes, 100% Bio<br> </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <a href="#"><img class="card-img-top" src="{{asset('shop/bc4.jpg')}}" style=" width:100%; height: 145px" alt=""></a>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <a href="#">Savon Karité Argile Verte</a>
+                                </h4>
+                                <h5>1000 F CFA</h5>
+                                <p class="card-text">Pour vos soins du corps<br> pour toute la famille </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <a href="#"><img class="card-img-top" src="{{asset('shop/bc3.jpg')}}" style=" width:100%; height: 145px" alt=""></a>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <a href="#">Huile Moringa</a>
+                                </h4>
+                                <h5>1500 F CFA</h5>
+                                <p class="card-text">Huile Végétale Naturelle<br> à base Moringa </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <!-- /.row -->
 
