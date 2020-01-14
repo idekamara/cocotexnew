@@ -89,7 +89,7 @@
                                 <h4 class="card-title">
                                     <a href="#">Adoration de Woodin</a>
                                 </h4>
-                                <h5>25.99 €</h5>
+                                <h5>16000 F CFA</h5>
                                 <p class="card-text">Pagne Africain de qualité supérieure, 100% coton<br> Produit en Afrique. </p>
                             </div>
                             <div class="card-footer">
@@ -105,7 +105,7 @@
                                 <h4 class="card-title">
                                     <a href="#">Fascination de Woodin</a>
                                 </h4>
-                                <h5>25.99 €</h5>
+                                <h5>16000 F CFA</h5>
                                 <p class="card-text">Pagne Africain de qualité supérieure, 100% coton<br> Produit en Afrique. </p>
                             </div>
                             <div class="card-footer">
@@ -121,7 +121,7 @@
                                 <h4 class="card-title">
                                     <a href="#">Harmonie de Woodin</a>
                                 </h4>
-                                <h5>25.99 €</h5>
+                                <h5>16000 F CFA</h5>
                                 <p class="card-text">Pagne Africain de qualité supérieure, 100% coton<br> Produit en Afrique. </p>
                             </div>
                             <div class="card-footer">
@@ -137,8 +137,8 @@
                                 <h4 class="card-title">
                                     <a href="#">Costume Africain</a>
                                 </h4>
-                                <h5>45.99 €</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                                <h5>35000 F CFA</h5>
+                                <p class="card-text">Tenue pour Homme en 2 pièces, Tissu fil à fil, 100% coton, travaille avec du pagne tissé au tour du cou et des manches</p>
                             </div>
                             <div class="card-footer">
                                 <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
@@ -153,8 +153,8 @@
                                 <h4 class="card-title">
                                     <a href="#">Costume Africain </a>
                                 </h4>
-                                <h5>45.99 €</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
+                                <h5>35000 F CFA</h5>
+                                <p class="card-text">Tenue pour Homme en 2 pièces, Tissu Super Cent Anglais, 100% coton, travaille avec du pagne tissé au tour du cou et des manches</p>
                             </div>
                             <div class="card-footer">
                                 <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
@@ -169,8 +169,24 @@
                                 <h4 class="card-title">
                                     <a href="#">Costume Africain</a>
                                 </h4>
-                                <h5>$24.99</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                                <h5>35000 F CFA</h5>
+                                <p class="card-text">Tenue pour Homme en 2 pièces, Tissu Super Cent Anglais, 100% coton, travaille avec du pagne tissé au tour du cou et des manches</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <a href="#"><img class="card-img-top" src="{{asset('shop/cht20.jpg')}}" style=" width:100%; height: 145px" alt=""></a>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <a href="#">Chemise Tissée</a>
+                                </h4>
+                                <h5>15000 F CFA</h5>
+                                <p class="card-text">Chemise pour Homme manche courte tissu 100% Coton, taille L / 40, design fait avec du pagne tissé </p>
                             </div>
                             <div class="card-footer">
                                 <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
@@ -180,13 +196,95 @@
 
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
+                            <a href="#"><img class="card-img-top" src="{{asset('shop/cht13.jpg')}}" style=" width:100%; height: 145px" alt=""></a>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <a href="#">Chemise Tissée </a>
+                                </h4>
+                                <h5>15000 F CFA</h5>
+                                <p class="card-text">Chemise pour Homme manche courte tissu 100% Coton, taille L / 40, design fait avec du pagne tissé </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <a href="#"><img class="card-img-top" src="{{asset('shop/cp2.jpg')}}" style=" width:100%; height: 145px" alt=""></a>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <a href="#">Chemise Patchée</a>
+                                </h4>
+                                <h5>20000 F CFA</h5>
+                                <p class="card-text">Chemise pour Homme à 80% woodin et 20% conton sur les manches taille XL / 42 </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <a href="#"><img class="card-img-top" src="{{asset('shop/bw3.jpg')}}" style=" width:100%; height: 145px" alt=""></a>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <a href="#">Bomber Homme</a>
+                                </h4>
+                                <h5>20000 F CFA</h5>
+                                <p class="card-text">Bombers pour Homme, 100% Woodin, taille XL / 42 </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <a href="#"><img class="card-img-top" src="{{asset('shop/bw2.jpg')}}" style=" width:100%; height: 145px" alt=""></a>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <a href="#">Bomber Femme</a>
+                                </h4>
+                                <h5>20000 F CFA</h5>
+                                <p class="card-text">Bombers pour Femme, 100% Woodin, taille L / 40 </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <a href="#"><img class="card-img-top" src="{{asset('shop/bb11.jpg')}}" style=" width:100%; height: 145px" alt=""></a>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <a href="#">Bomber Pour Enfant</a>
+                                </h4>
+                                <h5>15000 F CFA</h5>
+                                <p class="card-text">Bombers pour Enfant</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
                             <a href="#"><img class="card-img-top" src="{{asset('shop/shc.jpg')}}" style=" width:100%; height: 145px" alt=""></a>
                             <div class="card-body">
                                 <h4 class="card-title">
-                                    <a href="#">Adoration de Woodin</a>
+                                    <a href="#">Sandale en Bogolan</a>
                                 </h4>
-                                <h5>25.99 €</h5>
-                                <p class="card-text">Pagne Africain de qualité supérieure, 100% coton<br> Produit en Afrique. </p>
+                                <h5>7000 F CFA</h5>
+                                <p class="card-text">Chaussure pour Homme, 100% Woodin<br> Pointure 42 </p>
                             </div>
                             <div class="card-footer">
                                 <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
@@ -199,10 +297,10 @@
                             <a href="#"><img class="card-img-top" src="{{asset('shop/sha.jpg')}}" style=" width:100%; height: 145px" alt=""></a>
                             <div class="card-body">
                                 <h4 class="card-title">
-                                    <a href="#">Fascination de Woodin</a>
+                                    <a href="#">Sandale en Bogolan</a>
                                 </h4>
-                                <h5>25.99 €</h5>
-                                <p class="card-text">Pagne Africain de qualité supérieure, 100% coton<br> Produit en Afrique. </p>
+                                <h5>7000 F CFA</h5>
+                                <p class="card-text">Chaussure pour Homme, 100% Woodin<br> Pointure 43 </p>
                             </div>
                             <div class="card-footer">
                                 <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
@@ -215,10 +313,10 @@
                             <a href="#"><img class="card-img-top" src="{{asset('shop/shb.jpg')}}" style=" width:100%; height: 145px" alt=""></a>
                             <div class="card-body">
                                 <h4 class="card-title">
-                                    <a href="#">Harmonie de Woodin</a>
+                                    <a href="#">Sandale en Bogolan</a>
                                 </h4>
-                                <h5>25.99 €</h5>
-                                <p class="card-text">Pagne Africain de qualité supérieure, 100% coton<br> Produit en Afrique. </p>
+                                <h5>7000 F CFA</h5>
+                                <p class="card-text">Chaussure pour Homme, 100% Woodin<br> Pointure 44 </p>
                             </div>
                             <div class="card-footer">
                                 <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
