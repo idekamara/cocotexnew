@@ -15,7 +15,7 @@
            <!-- /.col-lg-8 -->
            <div class="col-lg-7">
                <p>{!!$product->description!!}</p>
-               <a class="btn btn-primary" href="/produit/{{$product->id}}/show">Call to Action!</a>
+               <a class="btn btn-primary" href="/produit/{{$product->id}}/show">Commander!</a>
            </div>
            <!-- /.col-md-4 -->
        </div>

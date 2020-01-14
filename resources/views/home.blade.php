@@ -278,13 +278,13 @@
 
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="{{asset('shop/shc.jpg')}}" style=" width:100%; height: 145px" alt=""></a>
+                            <a href="#"><img class="card-img-top" src="{{asset('shop/sh10.jpg')}}" style=" width:100%; height: 145px" alt=""></a>
                             <div class="card-body">
                                 <h4 class="card-title">
                                     <a href="#">Sandale en Bogolan</a>
                                 </h4>
                                 <h5>7000 F CFA</h5>
-                                <p class="card-text">Chaussure pour Homme, 100% Woodin<br> Pointure 42 </p>
+                                <p class="card-text">Chaussure pour Femme, 100% Woodin<br> Pointure 42 </p>
                             </div>
                             <div class="card-footer">
                                 <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
