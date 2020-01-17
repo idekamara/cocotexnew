@@ -11,7 +11,7 @@
                
                 <div id="menu">
                         <div class="list-group">
-                        <a href="{{route('products.pagnes')}}" class="list-group-item">Pagnes Africains</a>
+                        <h5><a href="{{route('products.pagnes')}}" class="list-group-item">Pagnes Africains</a>
                         <span class="sr-only">(current)</span>
                         <a href="{{route('products.costumes')}}" class="list-group-item">Costumes Africains</a>
                         <span class="sr-only">(current)</span>
@@ -23,7 +23,7 @@
                         <span class="sr-only">(current)</span>
                         <a href="#" class="list-group-item">HIJAB</a>
                         <span class="sr-only">(current)</span>
-                        <a href="{{route('products.biocos')}}" class="list-group-item">Bio Cosmetiques</a> 
+                        <a href="{{route('products.biocos')}}" class="list-group-item">Bio Cosmetiques</a> </h5>
                     </div>
                 </div>
 
@@ -84,10 +84,97 @@
 
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="{{asset('shop/w1.jpg')}}" style=" width:100%; height: 145px" alt=""></a>
+                            
+                            <!--slider small woodin -->
+                        <div id="carouselSmallIndicators" class="carousel slide my-" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                        <li data-target="#carouselSmallIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselSmallIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselSmallIndicators" data-slide-to="2"></li>
+                        </ol>
+                         <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img class="d-block img-fluid" src="{{asset('shop/w1.jpg')}}" style=" width:100%; height: 145px" alt="Pagnes Africains">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="{{asset('shop/w01.jpg')}}" style=" width:100%; height: 145px" alt="Costumes Africains">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="{{asset('shop/w2.jpg')}}" style=" width:100%; height: 145px" alt="Chemises Tissées">
+                        </div>
+                        </div>
+                        </div>
                             <div class="card-body">
-                                <h4 class="card-title">
-                                    <a href="#">Adoration de Woodin</a>
+                            <h4 class="card-title">
+                                <a href="{{route('products.pagnes')}}#adoration">Adoration de Woodin</a>
+                            </h4>
+                            <h5>16000 F CFA</h5>
+                            <p class="card-text">Pagne Africain de qualité supérieure, 100% coton<br> Produit en Afrique. </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/slider small -->
+                    <!--slider small woodin fascination-->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            
+                        <div id="carouselSmallIndicators" class="carousel slide my-" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                        <li data-target="#carouselSmallIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselSmallIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselSmallIndicators" data-slide-to="2"></li>
+                        </ol>
+                         <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img class="d-block img-fluid" src="{{asset('shop/w2t10.jpg')}}" style=" width:100%; height: 145px" alt="Pagnes Africains">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="{{asset('shop/w2t11.jpg')}}" style=" width:100%; height: 145px" alt="Costumes Africains">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="{{asset('shop/w2t14.jpg')}}" style=" width:100%; height: 145px" alt="Chemises Tissées">
+                        </div>
+                        </div>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <a href="{{route('products.pagnes')}}#fascination">Woodin 2 Tons</a>
+                                </h4>
+                                <h5>16000 F CFA</h5>
+                                <p class="card-text">Pagne Africain de qualité supérieure, 100% coton<br> Produit en Afrique. </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/slider small harmonie-->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                        <div id="carouselSmallIndicators" class="carousel slide my-" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselSmallIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselSmallIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselSmallIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img class="d-block img-fluid" src="{{asset('shop/w2t13.jpg')}}" style=" width:100%; height: 145px" alt="Pagnes Africains">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="{{asset('shop/w2t12.jpg')}}" style=" width:100%; height: 145px" alt="Costumes Africains">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="{{asset('shop/w2t16.jpg')}}" style=" width:100%; height: 145px" alt="Chemises Tissées">
+                        </div>
+                        </div>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">
+                               <a href="{{route('products.pagnes')}}#fascination">Fascination de Woodin</a>
                                 </h4>
                                 <h5>16000 F CFA</h5>
                                 <p class="card-text">Pagne Africain de qualité supérieure, 100% coton<br> Produit en Afrique. </p>
@@ -100,42 +187,27 @@
 
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="{{asset('shop/w5.jpg')}}" style=" width:100%; height: 145px" alt=""></a>
-                            <div class="card-body">
-                                <h4 class="card-title">
-                                    <a href="#">Fascination de Woodin</a>
-                                </h4>
-                                <h5>16000 F CFA</h5>
-                                <p class="card-text">Pagne Africain de qualité supérieure, 100% coton<br> Produit en Afrique. </p>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                            </div>
+                        <div id="carouselSmallIndicators" class="carousel slide my-" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                        <li data-target="#carouselSmallIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselSmallIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselSmallIndicators" data-slide-to="2"></li>
+                        </ol>
+                         <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img class="d-block img-fluid" src="{{asset('shop/ca1.jpg')}}" style=" width:100%; height: 145px" alt="Pagnes Africains">
                         </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="{{asset('shop/w4.jpg')}}" style=" width:100%; height: 145px" alt=""></a>
-                            <div class="card-body">
-                                <h4 class="card-title">
-                                    <a href="#">Harmonie de Woodin</a>
-                                </h4>
-                                <h5>16000 F CFA</h5>
-                                <p class="card-text">Pagne Africain de qualité supérieure, 100% coton<br> Produit en Afrique. </p>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                            </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="{{asset('shop/ca2.jpg')}}" style=" width:100%; height: 145px" alt="Costumes Africains">
                         </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="{{asset('shop/ca12.jpg')}}" style=" width:100%; height: 145px" alt=""></a>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="{{asset('shop/ca4.jpg')}}" style=" width:100%; height: 145px" alt="Chemises Tissées">
+                        </div>
+                        </div>
+                        </div>
                             <div class="card-body">
                                 <h4 class="card-title">
-                                    <a href="#">Costume Africain</a>
+                                    <a href="{{route('products.costumes')}}#Africains">Costume Africain</a>
                                 </h4>
                                 <h5>35000 F CFA</h5>
                                 <p class="card-text">Tenue pour Homme en 2 pièces, Tissu fil à fil, 100% coton, travaille avec du pagne tissé au tour du cou et des manches</p>
@@ -148,10 +220,27 @@
 
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="{{asset('shop/ca8.jpg')}}" style=" width:100%; height: 145px" alt=""></a>
+                            <div id="carouselSmallIndicators" class="carousel slide my-" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                        <li data-target="#carouselSmallIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselSmallIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselSmallIndicators" data-slide-to="2"></li>
+                        </ol>
+                         <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img class="d-block img-fluid" src="{{asset('shop/ca11.jpg')}}" style=" width:100%; height: 145px" alt="Pagnes Africains">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="{{asset('shop/ca12.jpg')}}" style=" width:100%; height: 145px" alt="Costumes Africains">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="{{asset('shop/ca13.jpg')}}" style=" width:100%; height: 145px" alt="Chemises Tissées">
+                        </div>
+                        </div>
+                        </div>
                             <div class="card-body">
                                 <h4 class="card-title">
-                                    <a href="#">Costume Africain </a>
+                                    <a href="{{route('products.costumes')}}#Africains">Costume Africain </a>
                                 </h4>
                                 <h5>35000 F CFA</h5>
                                 <p class="card-text">Tenue pour Homme en 2 pièces, Tissu Super Cent Anglais, 100% coton, travaille avec du pagne tissé au tour du cou et des manches</p>
@@ -164,10 +253,27 @@
 
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="{{asset('shop/ca10.jpg')}}" style=" width:100%; height: 145px" alt=""></a>
+                        <div id="carouselSmallIndicators" class="carousel slide my-" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                        <li data-target="#carouselSmallIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselSmallIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselSmallIndicators" data-slide-to="2"></li>
+                        </ol>
+                         <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img class="d-block img-fluid" src="{{asset('shop/ca01.jpg')}}" style=" width:100%; height: 145px" alt="Pagnes Africains">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="{{asset('shop/ca02.jpg')}}" style=" width:100%; height: 145px" alt="Costumes Africains">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="{{asset('shop/ca03.jpg')}}" style=" width:100%; height: 145px" alt="Chemises Tissées">
+                        </div>
+                        </div>
+                        </div>
                             <div class="card-body">
                                 <h4 class="card-title">
-                                    <a href="#">Costume Africain</a>
+                                    <a href="{{route('products.costumes')}}#Africains">Costume Africain</a>
                                 </h4>
                                 <h5>35000 F CFA</h5>
                                 <p class="card-text">Tenue pour Homme en 2 pièces, Tissu Super Cent Anglais, 100% coton, travaille avec du pagne tissé au tour du cou et des manches</p>

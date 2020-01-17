@@ -31,6 +31,10 @@ class AppServiceProvider extends ServiceProvider
         {
             return $user->isUser();
         });
+        Gate::define('admirator',function(User $user)
+        {
+            return $user->isAdmirator();
+        });
     }
 
 

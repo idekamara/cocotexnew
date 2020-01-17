@@ -22,6 +22,11 @@ class User extends Authenticatable
         return strtolower(@$this->roles) === 'moderator'? true : false;
     }
 
+     public function isAdmirator()
+    {
+        return strtolower(@$this->roles) === 'admirator'? true : false;
+    }
+
     public function isUser()
     {
         return strtolower(@$this->roles) === 'user'? true : false;

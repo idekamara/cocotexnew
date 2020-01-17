@@ -72,7 +72,7 @@
                                 <a class="dropdown-item" href="{{ route('products.index') }}" title="Gérer les produits"><i class="fa fa-cogs fa-lg" aria-hidden="true" style="color: orange"></i>&nbsp;{{ __('Gestion Produits') }}</a>
                                 <a class="dropdown-item" href="{{ route('contacts.index') }}" title="Gérer les utilisateurs"><i class="fa fa-user fa-lg" aria-hidden="true" style="color: green"></i>&nbsp;{{ __('Gestion Users') }}</a>
                                   @endcan
-                                  @can('moderator')
+                                  @can('admirator')
                                   <a class="dropdown-item" href="{{ route('categories.index') }}" title="Gérer les Categories"><i class="fa fa-cogs fa-lg" aria-hidden="true" style="color: yellow"></i>&nbsp;{{ __('Gestion Categories') }}</a>
                                 <a class="dropdown-item" href="{{ route('products.index') }}" title="Gérer les produits"><i class="fa fa-cogs fa-lg" aria-hidden="true" style="color: orange"></i>&nbsp;{{ __('Gestion Produits') }}</a>
                                 @endcan

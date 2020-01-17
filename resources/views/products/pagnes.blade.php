@@ -78,10 +78,10 @@
                     </a>
                 </div>
 
-                <div class="row">
+                <div class="row" id="adoration">
                      @foreach($products as $product)
                     <div class="col-lg-4 col-md-6 mb-4">
-                          <div class="card h-100">
+                          <div class="card h-100" id="fascination">
                             <a href="/product/product/{{$product->id}}"><img src="{{$product->images ? asset($product->images) : asset('uploads/images/default.png')}}" alt="{{$product->name}}" style="width:100%; height: 145px" ></a>
                             <div class="card-body">
                                 <h4 class="card-title">

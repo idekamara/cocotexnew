@@ -66,7 +66,7 @@ class ProductsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create()
-    { //$this->authorize('admin');    
+    { $this->authorize('admirator');    
      //On va recuperer les categories dans le model Category avec la methode pluck()
         $categories = \App\Category::pluck('name','id');
         $products = \App\Product::all();
@@ -141,7 +141,7 @@ class ProductsController extends Controller
      */
     public function edit($id)
     {
-        //$this->authorize('admin');
+        $this->authorize('admirator');
         //on recupere le produit avec la methode find()
         $product = \App\Product::find($id);
         $categories = \App\Category::pluck('name','id');
