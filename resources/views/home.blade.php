@@ -85,7 +85,7 @@
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
                             
-                            <!--slider small woodin -->
+                            <!--slider small woodin 1 -->
                         <div id="carouselSmallIndicators" class="carousel slide my-" data-ride="carousel">
                         <ol class="carousel-indicators">
                         <li data-target="#carouselSmallIndicators" data-slide-to="0" class="active"></li>
@@ -97,10 +97,10 @@
                             <img class="d-block img-fluid" src="{{asset('shop/w1.jpg')}}" style=" width:100%; height: 145px" alt="Pagnes Africains">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/w01.jpg')}}" style=" width:100%; height: 145px" alt="Costumes Africains">
+                            <img class="d-block img-fluid" src="{{asset('shop/w01.jpg')}}" style=" width:100%; height: 145px" alt="Pagnes Africains">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/w2.jpg')}}" style=" width:100%; height: 145px" alt="Chemises Tissées">
+                            <img class="d-block img-fluid" src="{{asset('shop/w2.jpg')}}" style=" width:100%; height: 145px" alt="Pagnes Africains">
                         </div>
                         </div>
                         </div>
@@ -116,8 +116,8 @@
                             </div>
                         </div>
                     </div>
-                    <!--/slider small -->
-                    <!--slider small woodin fascination-->
+                    <!--/slider small woodin 1-->
+                    <!--slider small woodin 2-->
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
                             
@@ -132,10 +132,10 @@
                             <img class="d-block img-fluid" src="{{asset('shop/w2t10.jpg')}}" style=" width:100%; height: 145px" alt="Pagnes Africains">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/w2t11.jpg')}}" style=" width:100%; height: 145px" alt="Costumes Africains">
+                            <img class="d-block img-fluid" src="{{asset('shop/w2t11.jpg')}}" style=" width:100%; height: 145px" alt="Pagnes Africains">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/w2t14.jpg')}}" style=" width:100%; height: 145px" alt="Chemises Tissées">
+                            <img class="d-block img-fluid" src="{{asset('shop/w2t14.jpg')}}" style=" width:100%; height: 145px" alt="Pagnes Africains">
                         </div>
                         </div>
                         </div>
@@ -151,7 +151,8 @@
                             </div>
                         </div>
                     </div>
-                    <!--/slider small harmonie-->
+                    <!--/slider small woodin 2-->
+                    <!--slider small woodin 3 -->
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
                         <div id="carouselSmallIndicators" class="carousel slide my-" data-ride="carousel">
@@ -165,10 +166,10 @@
                             <img class="d-block img-fluid" src="{{asset('shop/w2t13.jpg')}}" style=" width:100%; height: 145px" alt="Pagnes Africains">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/w2t12.jpg')}}" style=" width:100%; height: 145px" alt="Costumes Africains">
+                            <img class="d-block img-fluid" src="{{asset('shop/w2t12.jpg')}}" style=" width:100%; height: 145px" alt="Pagnes Africains">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/w2t16.jpg')}}" style=" width:100%; height: 145px" alt="Chemises Tissées">
+                            <img class="d-block img-fluid" src="{{asset('shop/w2t16.jpg')}}" style=" width:100%; height: 145px" alt="Pagnes Africains">
                         </div>
                         </div>
                         </div>
@@ -184,7 +185,8 @@
                             </div>
                         </div>
                     </div>
-
+                    <!--/slider small woodin 3-->
+                    <!--slider small costumes 1-->
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
                         <div id="carouselSmallIndicators" class="carousel slide my-" data-ride="carousel">
@@ -195,13 +197,13 @@
                         </ol>
                          <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
-                            <img class="d-block img-fluid" src="{{asset('shop/cap1.jpg')}}" style=" width:100%; height: 145px" alt="Pagnes Africains">
+                            <img class="d-block img-fluid" src="{{asset('shop/cap1.jpg')}}" style=" width:100%; height: 145px" alt="Costumes Africains Pickage">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/cap2.jpg')}}" style=" width:100%; height: 145px" alt="Costumes Africains">
+                            <img class="d-block img-fluid" src="{{asset('shop/cap2.jpg')}}" style=" width:100%; height: 145px" alt="Costumes Africains Pickage">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/cap4.jpg')}}" style=" width:100%; height: 145px" alt="Chemises Tissées">
+                            <img class="d-block img-fluid" src="{{asset('shop/cap4.jpg')}}" style=" width:100%; height: 145px" alt="Costumes Africains Pickage">
                         </div>
                         </div>
                         </div>
@@ -217,7 +219,8 @@
                             </div>
                         </div>
                     </div>
-
+                     <!--/slider small costumes 1-->
+                      <!--slider small costumes 2-->
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
                             <div id="carouselSmallIndicators" class="carousel slide my-" data-ride="carousel">
@@ -250,7 +253,8 @@
                             </div>
                         </div>
                     </div>
-
+                     <!--/slider small costumes 2-->
+                     <!--slider small costumes 3-->
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
                         <div id="carouselSmallIndicators" class="carousel slide my-" data-ride="carousel">
@@ -283,6 +287,8 @@
                             </div>
                         </div>
                     </div>
+                    <!--/slider small costumes 3-->
+                    <!--slider small chemises tissées 1-->
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
                         <div id="carouselSmallIndicators" class="carousel slide my-" data-ride="carousel">
@@ -293,10 +299,10 @@
                         </ol>
                          <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
-                            <img class="d-block img-fluid" src="{{asset('shop/cht10.jpg')}}" style=" width:100%; height: 145px" alt="Pagnes Africains">
+                            <img class="d-block img-fluid" src="{{asset('shop/cht10.jpg')}}" style=" width:100%; height: 145px" alt="Chemises Tissées">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/cht11.jpg')}}" style=" width:100%; height: 145px" alt="Costumes Africains">
+                            <img class="d-block img-fluid" src="{{asset('shop/cht11.jpg')}}" style=" width:100%; height: 145px" alt="Chemises Tissées">
                         </div>
                         <div class="carousel-item">
                             <img class="d-block img-fluid" src="{{asset('shop/cht1.jpg')}}" style=" width:100%; height: 145px" alt="Chemises Tissées">
@@ -315,7 +321,8 @@
                             </div>
                         </div>
                     </div>
-
+                    <!--/slider small chemises tissées 1-->
+                    <!--slider small chemises tissées 2-->
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
                         <div id="carouselSmallIndicators" class="carousel slide my-" data-ride="carousel">
@@ -326,10 +333,10 @@
                         </ol>
                          <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
-                            <img class="d-block img-fluid" src="{{asset('shop/cht22.jpg')}}" style=" width:100%; height: 145px" alt="Pagnes Africains">
+                            <img class="d-block img-fluid" src="{{asset('shop/cht22.jpg')}}" style=" width:100%; height: 145px" alt="Chemises Tissées">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/cht15.jpg')}}" style=" width:100%; height: 145px" alt="Costumes Africains">
+                            <img class="d-block img-fluid" src="{{asset('shop/cht15.jpg')}}" style=" width:100%; height: 145px" alt="Chemises Tissées">
                         </div>
                         <div class="carousel-item">
                             <img class="d-block img-fluid" src="{{asset('shop/cht16.jpg')}}" style=" width:100%; height: 145px" alt="Chemises Tissées">
@@ -348,7 +355,8 @@
                             </div>
                         </div>
                     </div>
-
+                     <!--/slider small chemises tissées 2-->
+                    <!--slider small chemises tissées 3-->
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
                         <div id="carouselSmallIndicators" class="carousel slide my-" data-ride="carousel">
@@ -359,10 +367,10 @@
                         </ol>
                          <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
-                            <img class="d-block img-fluid" src="{{asset('shop/cp2.jpg')}}" style=" width:100%; height: 145px" alt="Pagnes Africains">
+                            <img class="d-block img-fluid" src="{{asset('shop/cp2.jpg')}}" style=" width:100%; height: 145px" alt="Chemises Tissées">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/cp12.jpg')}}" style=" width:100%; height: 145px" alt="Costumes Africains">
+                            <img class="d-block img-fluid" src="{{asset('shop/cp12.jpg')}}" style=" width:100%; height: 145px" alt="Chemises tissées">
                         </div>
                         <div class="carousel-item">
                             <img class="d-block img-fluid" src="{{asset('shop/cp6.jpg')}}" style=" width:100%; height: 145px" alt="Chemises Tissées">
@@ -374,15 +382,15 @@
                                     <a href="{{route('products.chemises')}}#Patchées">Chemise Patchée</a>
                                 </h4>
                                 <h5>20000 F CFA</h5>
-                                <p class="card-text">Chemise pour Homme à 80% woodin et 20% conton sur les manches taille XL / 42 </p>
+                                <p class="card-text">Chemise woodin manche longue, pour Homme à 80% woodin et 20% conton sur les manches taille XL / 42 </p>
                             </div>
                             <div class="card-footer">
                                 <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
                             </div>
                         </div>
                     </div>
-
-
+                     <!--/slider small chemises tissées 3-->
+                    <!--slider small bomber homme 1-->
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
                         <div id="carouselSmallIndicators" class="carousel slide my-" data-ride="carousel">
@@ -393,13 +401,13 @@
                         </ol>
                          <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
-                            <img class="d-block img-fluid" src="{{asset('shop/bw0.jpg')}}" style=" width:100%; height: 145px" alt="Pagnes Africains">
+                            <img class="d-block img-fluid" src="{{asset('shop/bw0.jpg')}}" style=" width:100%; height: 145px" alt="Bombers Hommes">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/bw1.jpg')}}" style=" width:100%; height: 145px" alt="Costumes Africains">
+                            <img class="d-block img-fluid" src="{{asset('shop/bw1.jpg')}}" style=" width:100%; height: 145px" alt="Bombers Hommes">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/bw3.jpg')}}" style=" width:100%; height: 145px" alt="Chemises Tissées">
+                            <img class="d-block img-fluid" src="{{asset('shop/bw3.jpg')}}" style=" width:100%; height: 145px" alt="Bombers Hommes">
                         </div>
                         </div>
                         </div>
@@ -415,7 +423,8 @@
                             </div>
                         </div>
                     </div>
-
+                      <!--/slider small bomber homme 1-->
+                      <!--slider small bomber femme 2-->
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
                              <div id="carouselSmallIndicators" class="carousel slide my-" data-ride="carousel">
@@ -426,13 +435,13 @@
                         </ol>
                          <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
-                            <img class="d-block img-fluid" src="{{asset('shop/bw2.jpg')}}" style=" width:100%; height: 145px" alt="Pagnes Africains">
+                            <img class="d-block img-fluid" src="{{asset('shop/bw2.jpg')}}" style=" width:100%; height: 145px" alt="Bombers Femmes">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/bw4.jpg')}}" style=" width:100%; height: 145px" alt="Costumes Africains">
+                            <img class="d-block img-fluid" src="{{asset('shop/bw4.jpg')}}" style=" width:100%; height: 145px" alt="Bombers Femmes">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/bw5.jpg')}}" style=" width:100%; height: 145px" alt="Chemises Tissées">
+                            <img class="d-block img-fluid" src="{{asset('shop/bw5.jpg')}}" style=" width:100%; height: 145px" alt="Bombers Femmes">
                         </div>
                         </div>
                         </div>
@@ -448,7 +457,8 @@
                             </div>
                         </div>
                     </div>
-
+                    <!--/slider small bomber femme 2-->
+                    <!--slider small bomber enfant-->
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
                             <a href="#"><img class="card-img-top" src="{{asset('shop/bb11.jpg')}}" style=" width:100%; height: 145px" alt=""></a>
@@ -465,7 +475,8 @@
                         </div>
                     </div>
 
-
+                    <!--/slider small bomber enfant-->
+                    <!--slider small shoes Femmes-->
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
                         <div id="carouselSmallIndicators" class="carousel slide my-" data-ride="carousel">
@@ -476,13 +487,13 @@
                         </ol>
                          <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
-                            <img class="d-block img-fluid" src="{{asset('shop/sh10.jpg')}}" style=" width:100%; height: 145px" alt="Pagnes Africains">
+                            <img class="d-block img-fluid" src="{{asset('shop/sh10.jpg')}}" style=" width:100%; height: 145px" alt="Chaussures Femmes">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/sh01.jpg')}}" style=" width:100%; height: 145px" alt="Costumes Africains">
+                            <img class="d-block img-fluid" src="{{asset('shop/sh01.jpg')}}" style=" width:100%; height: 145px" alt="Chaussures Femmes">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/sh02.jpg')}}" style=" width:100%; height: 145px" alt="Chemises Tissées">
+                            <img class="d-block img-fluid" src="{{asset('shop/sh02.jpg')}}" style=" width:100%; height: 145px" alt="Chaussures">
                         </div>
                         </div>
                         </div>
@@ -490,15 +501,16 @@
                                 <h4 class="card-title">
                                     <a href="{{route('products.shoes')}}#Femmes">Sandale Femme</a>
                                 </h4>
-                                <h5>7000 F CFA</h5>
-                                <p class="card-text">Chaussure pour Femme, 100% Woodin<br> Pointure 42 </p>
+                                <h5> 5000 F CFA</h5>
+                                <p class="card-text">Chaussure pour Femme, 100% Bogolan de Woodin<br> Pointures disponibles: 37, 38, 39, 40, 41, 42, 43</p>
                             </div>
                             <div class="card-footer">
                                 <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
                             </div>
                         </div>
                     </div>
-
+                    <!--/slider small shoes Femmes-->
+                    <!--slider small shoes Hommes-->
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
                         <div id="carouselSmallIndicators" class="carousel slide my-" data-ride="carousel">
@@ -509,13 +521,13 @@
                         </ol>
                          <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
-                            <img class="d-block img-fluid" src="{{asset('shop/sha.jpg')}}" style=" width:100%; height: 145px" alt="Pagnes Africains">
+                            <img class="d-block img-fluid" src="{{asset('shop/sha.jpg')}}" style=" width:100%; height: 145px" alt="Chaussures Hommes">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/sh03.jpg')}}" style=" width:100%; height: 145px" alt="Costumes Africains">
+                            <img class="d-block img-fluid" src="{{asset('shop/sh03.jpg')}}" style=" width:100%; height: 145px" alt="Chaussures Hommes">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/shb.jpg')}}" style=" width:100%; height: 145px" alt="Chemises Tissées">
+                            <img class="d-block img-fluid" src="{{asset('shop/shb.jpg')}}" style=" width:100%; height: 145px" alt="Chaussures Hommes">
                         </div>
                         </div>
                         </div>
@@ -524,7 +536,7 @@
                                     <a href="{{route('products.shoes')}}#Hommes">Sandale Homme</a>
                                 </h4>
                                 <h5>7000 F CFA</h5>
-                                <p class="card-text">Chaussure pour Homme, 100% Woodin<br> Pointure 43 </p>
+                                <p class="card-text">Chaussure pour Homme, 100% Bogolan de Woodin<br> Pointures disponibles: 40, 41, 42, 43, 44, 45</p>
                             </div>
                             <div class="card-footer">
                                 <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
@@ -537,10 +549,10 @@
                             <a href="#"><img class="card-img-top" src="{{asset('shop/sh1.jpg')}}" style=" width:100%; height: 145px" alt=""></a>
                             <div class="card-body">
                                 <h4 class="card-title">
-                                    <a href="{{route('products.shoes')}}#Enfants">Sandale en Bogolan</a>
+                                    <a href="{{route('products.shoes')}}#Enfants">Sandale Enfant</a>
                                 </h4>
-                                <h5>7000 F CFA</h5>
-                                <p class="card-text">Chaussure pour Homme, 100% Woodin<br> Pointure 44 </p>
+                                <h5>5000 F CFA</h5>
+                                <p class="card-text">Chaussure pour Enfant, 100% Bogolan de Woodin<br> Pointures disponibles: 25, 28, 30, 31, 32, 33, 34 </p>
                             </div>
                             <div class="card-footer">
                                 <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
@@ -639,7 +651,7 @@
                                     <a href="{{route('products.biocos')}}#Huiles">Huile V. N. Bio</a>
                                 </h4>
                                 <h5>1500 F CFA</h5>
-                                <p class="card-text">Huile Végétale Naturelle Bio à base de<br> Moringa, Boabab, Neem, ...,<br> Idéal pour vos soins et Beauté visage, corps, cheveux, ...  </p>
+                                <p class="card-text">Huile Végétale Naturelle Bio à base de Moringa, Boabab, Neem, ...,<br> Idéal pour vos soins et Beauté visage, corps, cheveux, ...  </p>
                             </div>
                             <div class="card-footer">
                                 <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>

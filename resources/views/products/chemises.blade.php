@@ -10,7 +10,7 @@
 
                 <div id="menu">
                     <div class="list-group">
-                        <a href="{{route('products.pagnes')}}" class="list-group-item">Pagnes Africains</a>
+                       <h5><a href="{{route('products.pagnes')}}" class="list-group-item">Pagnes Africains</a>
                         <span class="sr-only">(current)</span>
                         <a href="{{route('products.costumes')}}" class="list-group-item">Costumes Africains</a>
                         <span class="sr-only">(current)</span>
@@ -22,7 +22,7 @@
                         <span class="sr-only">(current)</span>
                         <a href="#" class="list-group-item">HIJAB</a>
                         <span class="sr-only">(current)</span>
-                        <a href="{{route('products.biocos')}}" class="list-group-item">Bio Cosmetiques</a> 
+                        <a href="{{route('products.biocos')}}" class="list-group-item">Bio Cosmetiques</a></h5>
                     </div>
                 </div>
 
@@ -65,7 +65,7 @@
                             <img class="d-block img-fluid" src="{{asset('shop/cht11.jpg')}}" style="width:60%px;height:350px" alt="Chaussures Woodin">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="{{asset('shop/cht12.jpg')}}" style="width:60%px;height:350px" alt="Chaussures Woodin">
+                            <img class="d-block img-fluid" src="{{asset('shop/cht10.jpg')}}" style="width:60%px;height:350px" alt="Chaussures Woodin">
                         </div>
 
                     </div>
