@@ -43,7 +43,7 @@
                     </ol>
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
-                            <img class="d-block img-fluid" src="{{asset('shop/w2t5.jpg')}}" style="width:900px;height:350px" alt="Pagnes Africains">
+                            <img class="d-block img-fluid" src="{{asset('shop/w2t2.jpg')}}" style="width:900px;height:350px" alt="Pagnes Africains">
                         </div>
                         <div class="carousel-item">
                             <img class="d-block img-fluid" src="{{asset('shop/w2t3.jpg')}}" style="width:900px;height:350px" alt="Costumes Africains">

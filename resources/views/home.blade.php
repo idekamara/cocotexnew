@@ -107,8 +107,8 @@
                             <div class="card-body">
                             <h4 class="card-title">
                                 <a href="{{route('products.pagnes')}}#adoration">Adoration de Woodin</a>
-                            </h4>
-                            <h5>16000 F CFA</h5>
+                            </h4>à partir de :
+                            <h5> 16000 F CFA</h5>
                             <p class="card-text">Pagne Africain de qualité supérieure, 100% coton<br> Produit en Afrique. </p>
                             </div>
                             <div class="card-footer">
@@ -142,7 +142,7 @@
                         <div class="card-body">
                             <h4 class="card-title">
                                 <a href="{{route('products.pagnes')}}#fascination">Woodin 2 Tons</a>
-                                </h4>
+                                </h4>à partir de :
                                 <h5>16000 F CFA</h5>
                                 <p class="card-text">Pagne Africain de qualité supérieure, 100% coton<br> Produit en Afrique. </p>
                             </div>
@@ -175,8 +175,8 @@
                         </div>
                         <div class="card-body">
                             <h4 class="card-title">
-                               <a href="{{route('products.pagnes')}}#fascination">Fascination de Woodin</a>
-                                </h4>
+                               <a href="{{route('products.pagnes')}}#fascination">Fascination Woodin</a>
+                                </h4> à partir de:
                                 <h5>16000 F CFA</h5>
                                 <p class="card-text">Pagne Africain de qualité supérieure, 100% coton<br> Produit en Afrique. </p>
                             </div>
@@ -650,7 +650,7 @@
                                 <h4 class="card-title">
                                     <a href="{{route('products.biocos')}}#Huiles">Huile V. N. Bio</a>
                                 </h4>
-                                <h5>1500 F CFA</h5>
+                                <h5>2000 F CFA</h5>
                                 <p class="card-text">Huile Végétale Naturelle Bio à base de Moringa, Boabab, Neem, ...,<br> Idéal pour vos soins et Beauté visage, corps, cheveux, ...  </p>
                             </div>
                             <div class="card-footer">
