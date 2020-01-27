@@ -47,7 +47,8 @@ Route::delete('/contacts/user/{id}', 'ContactsController@destroy')->name('suppri
 Route::get('/contacts/edit/{id}', 'ContactsController@edit')->name('editer_user')->middleware('auth');
 Route::patch('/contacts/edit/{id}', 'ContactsController@update')->name('updater_user');
 //Route::get('/login','LoginController@showLoginForm')->name('login');
-
+Route::get('products/search', 'ProductsController@search_prod')->name('search_prod');
+Route::get('products/resultats', 'ProductsController@resultats_search')->name('resultats_search');
 //routes pour les differentes operations sur les categories
 
 Route::resource('categories', 'CategoriesController')->middleware('auth');

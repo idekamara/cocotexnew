@@ -49,7 +49,7 @@ class ContactsController extends Controller
             $users->roles = $request->input('role');
             $users->save();
         }
-        return view('/contacts/index')->with('info', 'Le User a bien été modifié');
+        return redirect('/contacts/index')->with('info', 'Le User a bien été modifié');
     }
 
     public function store(ContactsRequest $request)

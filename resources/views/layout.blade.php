@@ -35,7 +35,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
            <li class="nav-item active"> 
-             <a class="nav-link" href="#" title="Recherche...">
+             <a class="nav-link" href="{{route('search_prod')}}" title="Recherche...">
               <span class="js-search topbar-search" id="topbar-search">
               <span class="icon icon-search"><i class="fa fa-search fa-lg"></i></span>
               </span>

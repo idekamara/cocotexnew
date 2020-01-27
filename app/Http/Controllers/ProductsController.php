@@ -66,12 +66,12 @@ class ProductsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create()
-    { $this->authorize('admirator');    
+    { //$this->authorize('admirator');    
      //On va recuperer les categories dans le model Category avec la methode pluck()
         $categories = \App\Category::pluck('name','id');
         $products = \App\Product::all();
         return view('products.create', compact('categories','products'));
-        //return view('products.create');
+        //return view('products.create'); $product->category_id = $request->input('category_id')
     }
     /**
      * Store a newly created resource in storage.
@@ -147,6 +147,62 @@ class ProductsController extends Controller
         $categories = \App\Category::pluck('name','id');
         return view('products.edit', compact('product','categories'));
     }
+
+     public function search_prod(Request $request){
+
+      /*  $nom_prod =  $request->input('nom');
+        $prix_prod =  $request->input('price');
+        $category = $request->input('category_id');
+        $product =  \App\Product::orWhere("category_id", "like", "%$category%")
+                            ->orWhere("name", "like", "%$nom_prod%")->get();*/
+        $categories = \App\Category::pluck('name','id');
+        return view('products.search', compact('categories'));
+    }
+
+   
+
+    public function resultats_search(Request $request){
+
+        $nom_prod =  $request->input('nom');
+        //$prix_prod =  $request->input('price');
+        $category = $request->input('category_id');
+       /* if(empty($nom_prod) && empty($category))
+        {
+            return redirect('/products/search')->with('info', 'Veuiller Renseigner les champs ');
+        }*/
+        if(($category!==null)&&($nom_prod!==null))
+        {
+
+          $products = \App\Product::Where("category_id", "$category")
+                                    ->Where("name", "like", "%$nom_prod%")->get(); 
+           // dd($products);  
+            //$categories = \App\Category::pluck('name','id');
+            //return view('products.resultats', compact('nom_prod','products'));  
+        }
+       else if(($category!==null)&&($nom_prod==null)){
+            $products =  \App\Product::Where("category_id", "$category")->get();
+            //$categories = \App\Category::pluck('name','id');
+            //return view('products.resultats', compact('products','nom_prod'));
+        }
+        else if(($category==null)&&($nom_prod!==null)){
+           $products = \App\Product::Where("name", "like", "%$nom_prod%")->get();
+        //$categories = \App\Category::pluck('name','id');
+            //return view('products.resultats', compact('nom_prod','products'));
+        }
+        //dd($products[0]);
+        //$products est un objet, une collection de tableau si la 1ere ligne (le 1er tableau) est vide 
+        if(!empty($products[0])){
+            //dd($products);
+            return view('products.resultats', compact('nom_prod','products'));
+        }
+        else /*if(($category==null)&&($nom_prod==null))*/{
+            return redirect('/products/search')->with('info', 'Aucun résultat correspondant');
+        }
+        }
+        
+
+
+
     /**
      * Update the specified resource in storage.
      *
