@@ -19,7 +19,7 @@
             <input type="text" name="nom" class="form-control mb-30"
             placeholder="Ex: pagne, chemise, ...">
         </div>
-        
+
         <div class="col-12 col-md-3">
             <button type="submit" class="btn btn-primary w-100">Rechercher</button>
         </div>
@@ -31,4 +31,4 @@
     </div>
     @endif
 </div>
-@endsection
+@endsection 

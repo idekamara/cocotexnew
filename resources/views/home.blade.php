@@ -11,7 +11,9 @@
                
                 <div id="menu">
                         <div class="list-group">
-                        <h5><a href="{{route('products.pagnes')}}" class="list-group-item">Pagnes Africains</a>
+                        <h5><a href="{{route('products.all')}}" class="list-group-item">Tous nos Produits</a>
+                        <span class="sr-only">(current)</span>
+                        <a href="{{route('products.pagnes')}}" class="list-group-item">Pagnes Africains</a>
                         <span class="sr-only">(current)</span>
                         <a href="{{route('products.costumes')}}" class="list-group-item">Costumes Africains</a>
                         <span class="sr-only">(current)</span>

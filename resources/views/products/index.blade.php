@@ -19,7 +19,7 @@
         @foreach($products as $product)
             <tr>
                 <td> {{$product->id}} </td>
-                <td><a href="/product/product/{{$product->id}}">{{$product->name}}</a> <img src="{{$product->images ? asset($product->images) : asset('uploads/images/default.png')}}" alt="{{$product->name}}" width="50" height="60"></td>
+                <td><a href="/product/product/{{$product->id}}">{{$product->name}}</a><img src="{{$product->images ? asset($product->images) : asset('uploads/images/default.png')}}" alt="{{$product->name}}" width="50" height="60"></td>
                 <td>{{$product->price}}</td>
                 <td> {{ $product->category->name ?? '' }}</td>
                 <td>{!!$product->description!!}</td>

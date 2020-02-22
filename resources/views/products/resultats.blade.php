@@ -13,13 +13,15 @@
                 <td> {{ $product->category->name ?? '' }}</td>
                 <td>{!!$product->description!!}</td>
                 <td>
-                    
-                        <a class="btn btn-primary btn-sm" href="{{route('editer_produit',['id'=>$product->id])}}" title="Acheter">
-
-                            <i class="fa fa-shopping-cart" aria-hidden="true">&nbsp;Commander</i></a>
+                <form action="{{route('add.carts')}}" method="POST" id="{{'product_'.$product->id}}" class="add-to-cart">
+                    @csrf
+                    <input type="hidden" name="user_id" value="{{\Illuminate\Support\Facades\Auth::id()}}">
+                    <input type="hidden" name="product_id" value="{{$product->id}}">
+                    <button type="submit" class="btn btn-primary btn-fancy" href="/produit/{{$product->id}}/show">Ajouter au panier</button>
+                </form>
                 </td>
 
             </tr>
         @endforeach
     </table>
-    @endsection
+    @endsection 

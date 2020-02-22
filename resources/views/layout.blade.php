@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -40,62 +39,68 @@
               <span class="icon icon-search"><i class="fa fa-search fa-lg"></i></span>
               </span>
               </a>
-          <li class="nav-item active">
-            <div class="top-right links">
-            <a class="nav-link" href="{{route('home')}}" title="Page d'Accueil"><i class="fa fa-home fa-fw fa-lg" aria-hidden="true"></i>
-            
-                 </a> 
-                 <li class="nav-item">
-                 <a class="nav-link" href="#" color='' title="A Propos">&nbsp;<i class="fa fa-info-circle fa-lg" aria-hidden="true"></i>&nbsp;</a>
-                
+<li class="nav-item active">
+  <div class="top-right links">
+  <a class="nav-link" href="{{route('home')}}" title="Page d'Accueil"><i class="fa fa-home fa-fw fa-lg" aria-hidden="true"></i>
+  
+       </a> 
+       <li class="nav-item">
+       <a class="nav-link" href="#" color='' title="A Propos">&nbsp;<i class="fa fa-info-circle fa-lg" aria-hidden="true"></i>&nbsp;</a>
+       </li>
+       <li class="nav-item">
+       <a class="nav-link" href="{{ route('panier') }}" title="Gérer mon panier">&nbsp;<i class="fa fa-shopping-cart fa-lg" aria-hidden="true" style="color: bluee">&nbsp;</i><span class="badge badge-pill badge-light">{{Cart::count()}} </span></a>
+       </li>
+           @guest
+                <li class="nav-item">
+                      <a class="nav-link" href="{{ route('login') }}" title="Connexion"><i class="fa fa-sign-in fa-lg" aria-hidden="true"></i>&nbsp;{{ __('') }}
+                      </a>
                   </li>
-                     @guest
-                          <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}" title="Connexion"><i class="fa fa-sign-in fa-lg" aria-hidden="true"></i>&nbsp;{{ __('') }}
-                                </a>
-                            </li>
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}" title="Inscription"><i class="fa fa-user-plus fa-lg" aria-hidden="true"></i></a>&nbsp;{{ __('') }}
-                                    
-                                </li>
-                            @endif
-                        @else
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    <i class="fa fa-user fa-lg" style="color: green"></i>&nbsp;{{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
+                  @if (Route::has('register'))
+                      <li class="nav-item">
+                          <a class="nav-link" href="{{ route('register') }}" title="Inscription"><i class="fa fa-user-plus fa-lg" aria-hidden="true"></i></a>&nbsp;{{ __('') }}
+                          
+                      </li>
+                  @endif
+              @else
+                  <li class="nav-item dropdown">
+                      <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                          <i class="fa fa-user fa-lg" style="color: green"></i>&nbsp;{{ Auth::user()->name }}<span class="caret"></span>
+                      </a>
 
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                  @can('admin')
-                                  <a class="dropdown-item" href="{{ route('categories.index') }}" title="Gérer les Categories"><i class="fa fa-cogs fa-lg" aria-hidden="true" style="color: yellow"></i>&nbsp;{{ __('Gestion Categories') }}</a>
-                                <a class="dropdown-item" href="{{ route('products.index') }}" title="Gérer les produits"><i class="fa fa-cogs fa-lg" aria-hidden="true" style="color: orange"></i>&nbsp;{{ __('Gestion Produits') }}</a>
-                                <a class="dropdown-item" href="{{ route('contacts.index') }}" title="Gérer les utilisateurs"><i class="fa fa-user fa-lg" aria-hidden="true" style="color: green"></i>&nbsp;{{ __('Gestion Users') }}</a>
-                                  @endcan
-                                  @can('admirator')
-                                  <a class="dropdown-item" href="{{ route('categories.index') }}" title="Gérer les Categories"><i class="fa fa-cogs fa-lg" aria-hidden="true" style="color: yellow"></i>&nbsp;{{ __('Gestion Categories') }}</a>
-                                <a class="dropdown-item" href="{{ route('products.index') }}" title="Gérer les produits"><i class="fa fa-cogs fa-lg" aria-hidden="true" style="color: orange"></i>&nbsp;{{ __('Gestion Produits') }}</a>
-                                @endcan
-                                    <a class="dropdown-item" href="{{ route('home') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();" title="Quitter">
-                                        <i class="fa fa-sign-out fa-lg" aria-hidden="true" style="color: red"></i>&nbsp;{{ __('Déconnexion') }}
-                                    </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+              <span class="dropdown-item" style="background-color:grey"><i class="fa fa-pencil fa-fw" aria-hidden="true" style="color: green"></i>&nbsp;{{ __('Profil') }}:&nbsp;{{ Auth::user()->roles }}</span>
+              @can('admin')
+              <a class="dropdown-item" href="{{ route('categories.index') }}" title="Gérer les Categories"><i class="fa fa-cogs fa-lg" aria-hidden="true" style="color: yellow"></i>&nbsp;{{ __('Gestion Categories') }}</a>
+            <a class="dropdown-item" href="{{ route('products.index') }}" title="Gérer les produits"><i class="fa fa-cogs fa-lg" aria-hidden="true" style="color: orange"></i>&nbsp;{{ __('Gestion Produits') }}</a>
+            <a class="dropdown-item" href="{{ route('contacts.index') }}" title="Gérer les utilisateurs"><i class="fa fa-user fa-lg" aria-hidden="true" style="color: green"></i>&nbsp;{{ __('Gestion Users') }}</a>
+              @endcan
+              @can('moderator')
+              <a class="dropdown-item" href="{{ route('categories.index') }}" title="Gérer les Categories"><i class="fa fa-cogs fa-lg" aria-hidden="true" style="color: yellow"></i>&nbsp;{{ __('Gestion Categories') }}</a>
+            <a class="dropdown-item" href="{{ route('products.index') }}" title="Gérer les produits"><i class="fa fa-cogs fa-lg" aria-hidden="true" style="color: orange"></i>&nbsp;{{ __('Gestion Produits') }}</a>
+            @endcan
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
-                        @endguest
-              <li class="nav-item">
-            <a class="nav-link" href="{{route('contacts.create')}}" title="Nous Contacter"><i class="fa fa-envelope-o fa-lg"></i>&nbsp;</a>
-          </li>
-        </div>
-        </ul>
-      </div>
-    </div>
-  </nav>
+             <a class="dropdown-item" href="{{ route('vider') }}" onclick="return confirm('Voulez vous vider votre panier ?');" title="Vider mon panier">&nbsp;<i class="fa fa-shopping-cart fa-lg" aria-hidden="true" style="color: blue">&nbsp;</i>{{ __('Vider Panier') }}&nbsp;<span class="badge badge-pill badge-dark">{{Cart::count()}} </span></a>
+
+                          <a class="dropdown-item" href="{{ route('home') }}"
+                             onclick="event.preventDefault();
+                                           document.getElementById('logout-form').submit();" title="Quitter">
+                              <i class="fa fa-sign-out fa-lg" aria-hidden="true" style="color: red"></i>&nbsp;{{ __('Déconnexion') }}
+                          </a>
+
+                          <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                              @csrf
+                          </form>
+                      </div>
+                  </li>
+              @endguest
+    <li class="nav-item">
+  <a class="nav-link" href="{{route('contacts.create')}}" title="Nous Contacter"><i class="fa fa-envelope-o fa-lg"></i>&nbsp;</a>
+</li>
+</div>
+</ul>
+</div>
+</div>
+</nav>
 
   <!-- Page Content -->
  <div class="container">

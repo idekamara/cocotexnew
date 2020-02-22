@@ -30,3 +30,35 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 const app = new Vue({
     el: '#app',
 });
+
+let form = document.getElementById("category_form");
+$('form.add-to-cart').submit(function (e) {
+   e.preventDefault();
+   let form_data = $(this).serialize();
+   //alert(form_data);
+   $.ajax({
+       type: "POST",
+       url: '/product/add_to_cart',
+       data: form_data,
+       success: function (data) {
+           if(data.success){
+               $(`form#${data.id} button`).html('produit ajouter au panier');
+               console.log("Tout va bien");
+               Swal.fire({
+                   title: 'Produit Ajouté dans le panier!',
+                   text: 'Do you want to continue',
+                   icon: 'success',
+                   html:'<a href="/cart" class="btn btn-success">Ouvrir le panier</a>',
+                   showCloseButton: true,
+                   showCancelButton: false,
+                   focusConfirm: false,
+                   confirmButtonText:
+                       '<i class="fa fa-thumbs-up"></i> Ajouter d\'autres produits!',
+                   confirmButtonAriaLabel: 'Ajouter d\'autres produits!'
+               });
+           }else{
+               console.log("il y une erreur");
+           }
+       }
+   })
+});
